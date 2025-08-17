@@ -65,6 +65,11 @@ jobs:
             # Commit the changes with a message.
             git commit -m "chore: Daily vulnerability report update"
             
+            # Pull the latest changes from the remote repository before pushing.
+            # This prevents "failed to push" errors if another commit was made
+            # after the workflow started.
+            git pull origin main
+
             # Push the changes back to the repository. The 'GITHUB_TOKEN' is a built-in secret.
             git push
           fi
