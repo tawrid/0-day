@@ -16,6 +16,10 @@ on:
 # A workflow is made of one or more jobs.
 jobs:
   build:
+    # This is the new line you need to add to grant write permissions.
+    permissions:
+      contents: write
+      
     # Runs the job on the latest version of Ubuntu Linux.
     runs-on: ubuntu-latest
     
