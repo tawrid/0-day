@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2013-05-24</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2013-05-24</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2013-3660" target="_blank">CVE-2013-3660</a></h3>
+            <p>The EPATHOBJ::pprFlattenRec function in win32k.sys in the kernel-mode drivers in Microsoft Windows XP SP2 and SP3, Windows Server 2003 SP2, Windows Vista SP2, Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8, and Windows Server 2012 does not properly initialize a pointer for the next object in a certain list, which allows local users to obtain write access to the PATHRECORD chain, and consequently gain privileges, by triggering excessive consumption of paged memory and then making many FlattenPath function calls, aka "Win32k Read AV Vulnerability."</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://twitter.com/taviso/statuses/309157606247768064" target="_blank">http://twitter.com/taviso/statuses/309157606247768064</a></li><li><a href="http://www.exploit-db.com/exploits/25611/" target="_blank">http://www.exploit-db.com/exploits/25611/</a></li><li><a href="http://www.reddit.com/r/netsec/comments/1eqh66/0day_windows_kernel_epathobj_vulnerability/" target="_blank">http://www.reddit.com/r/netsec/comments/1eqh66/0day_windows_kernel_epathobj_vulnerability/</a></li><li><a href="http://twitter.com/taviso/statuses/309157606247768064" target="_blank">http://twitter.com/taviso/statuses/309157606247768064</a></li><li><a href="http://www.exploit-db.com/exploits/25611/" target="_blank">http://www.exploit-db.com/exploits/25611/</a></li><li><a href="http://www.reddit.com/r/netsec/comments/1eqh66/0day_windows_kernel_epathobj_vulnerability/" target="_blank">http://www.reddit.com/r/netsec/comments/1eqh66/0day_windows_kernel_epathobj_vulnerability/</a></li></ul></div>
+</body></html>
