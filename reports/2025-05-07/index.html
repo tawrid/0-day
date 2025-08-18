@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2025-05-07</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2025-05-07</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-2775" target="_blank">CVE-2025-2775</a></h3>
+            <p>SysAid On-Prem versions <= 23.3.40 are vulnerable to an unauthenticated XML External Entity (XXE) vulnerability in the Checkin processing functionality,  allowing for administrator account takeover and file read primitives.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://labs.watchtowr.com/sysowned-your-friendly-rce-support-ticket/" target="_blank">https://labs.watchtowr.com/sysowned-your-friendly-rce-support-ticket/</a></li><li><a href="https://labs.watchtowr.com/sysowned-your-friendly-rce-support-ticket/" target="_blank">https://labs.watchtowr.com/sysowned-your-friendly-rce-support-ticket/</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-2776" target="_blank">CVE-2025-2776</a></h3>
+            <p>SysAid On-Prem versions <= 23.3.40 are vulnerable to an unauthenticated XML External Entity (XXE) vulnerability in the Server URL processing functionality, allowing for administrator account takeover and file read primitives.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://labs.watchtowr.com/sysowned-your-friendly-rce-support-ticket/" target="_blank">https://labs.watchtowr.com/sysowned-your-friendly-rce-support-ticket/</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-35939" target="_blank">CVE-2025-35939</a></h3>
+            <p>Craft CMS stores arbitrary content provided by unauthenticated users in session files. This content could be accessed and executed, possibly using an independent vulnerability. Craft CMS redirects requests that require authentication to the login page and generates a session file on the server at '/var/lib/php/sessions'. Such session files are named 'sess_[session_value]', where '[session_value]' is provided to the client in a 'Set-Cookie' response header. Craft CMS stores the return URL requested by the client without sanitizing parameters. Consequently, an unauthenticated client can introduce arbitrary values, such as PHP code, to a known local file location on the server. Craft CMS versions 5.7.5 and 4.15.3 have been released to address this issue.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/craftcms/cms/pull/17220" target="_blank">https://github.com/craftcms/cms/pull/17220</a></li><li><a href="https://github.com/craftcms/cms/releases/tag/4.15.3" target="_blank">https://github.com/craftcms/cms/releases/tag/4.15.3</a></li><li><a href="https://github.com/craftcms/cms/releases/tag/5.7.5" target="_blank">https://github.com/craftcms/cms/releases/tag/5.7.5</a></li></ul></div>
+</body></html>

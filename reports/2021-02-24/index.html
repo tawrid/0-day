@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2021-02-24</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2021-02-24</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-21972" target="_blank">CVE-2021-21972</a></h3>
+            <p>The vSphere Client (HTML5) contains a remote code execution vulnerability in a vCenter Server plugin. A malicious actor with network access to port 443 may exploit this issue to execute commands with unrestricted privileges on the underlying operating system that hosts vCenter Server. This affects VMware vCenter Server (7.x before 7.0 U1c, 6.7 before 6.7 U3l and 6.5 before 6.5 U3n) and VMware Cloud Foundation (4.x before 4.2 and 3.x before 3.10.1.2).</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://packetstormsecurity.com/files/161590/VMware-vCenter-Server-7.0-Arbitrary-File-Upload.html" target="_blank">http://packetstormsecurity.com/files/161590/VMware-vCenter-Server-7.0-Arbitrary-File-Upload.html</a></li><li><a href="http://packetstormsecurity.com/files/161695/VMware-vCenter-Server-File-Upload-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/161695/VMware-vCenter-Server-File-Upload-Remote-Code-Execution.html</a></li><li><a href="http://packetstormsecurity.com/files/163268/VMware-vCenter-6.5-6.7-7.0-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/163268/VMware-vCenter-6.5-6.7-7.0-Remote-Code-Execution.html</a></li><li><a href="http://packetstormsecurity.com/files/161590/VMware-vCenter-Server-7.0-Arbitrary-File-Upload.html" target="_blank">http://packetstormsecurity.com/files/161590/VMware-vCenter-Server-7.0-Arbitrary-File-Upload.html</a></li><li><a href="http://packetstormsecurity.com/files/161695/VMware-vCenter-Server-File-Upload-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/161695/VMware-vCenter-Server-File-Upload-Remote-Code-Execution.html</a></li><li><a href="http://packetstormsecurity.com/files/163268/VMware-vCenter-6.5-6.7-7.0-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/163268/VMware-vCenter-6.5-6.7-7.0-Remote-Code-Execution.html</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-21973" target="_blank">CVE-2021-21973</a></h3>
+            <p>The vSphere Client (HTML5) contains an SSRF (Server Side Request Forgery) vulnerability due to improper validation of URLs in a vCenter Server plugin. A malicious actor with network access to port 443 may exploit this issue by sending a POST request to vCenter Server plugin leading to information disclosure. This affects: VMware vCenter Server (7.x before 7.0 U1c, 6.7 before 6.7 U3l and 6.5 before 6.5 U3n) and VMware Cloud Foundation (4.x before 4.2 and 3.x before 3.10.1.2).</p>
+        </div>
+</body></html>

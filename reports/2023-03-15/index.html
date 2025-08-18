@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2023-03-15</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2023-03-15</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-1389" target="_blank">CVE-2023-1389</a></h3>
+            <p>TP-Link Archer AX21 (AX1800) firmware versions before 1.1.4 Build 20230219 contained a command injection vulnerability in the country form of the /cgi-bin/luci;stok=/locale endpoint on the web management interface. Specifically, the country parameter of the write operation was not sanitized before being used in a call to popen(), allowing an unauthenticated attacker to inject commands, which would be run as root, with a simple POST request.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://packetstormsecurity.com/files/174131/TP-Link-Archer-AX21-Command-Injection.html" target="_blank">http://packetstormsecurity.com/files/174131/TP-Link-Archer-AX21-Command-Injection.html</a></li><li><a href="https://www.tenable.com/security/research/tra-2023-11" target="_blank">https://www.tenable.com/security/research/tra-2023-11</a></li><li><a href="http://packetstormsecurity.com/files/174131/TP-Link-Archer-AX21-Command-Injection.html" target="_blank">http://packetstormsecurity.com/files/174131/TP-Link-Archer-AX21-Command-Injection.html</a></li><li><a href="https://www.tenable.com/security/research/tra-2023-11" target="_blank">https://www.tenable.com/security/research/tra-2023-11</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-28461" target="_blank">CVE-2023-28461</a></h3>
+            <p>Array Networks Array AG Series and vxAG (9.4.0.481 and earlier) allow remote code execution. An attacker can browse the filesystem on the SSL VPN gateway using a flags attribute in an HTTP header without authentication. The product could then be exploited through a vulnerable URL. The 2023-03-09 vendor advisory stated "a new Array AG release with the fix will be available soon."</p>
+        </div>
+</body></html>

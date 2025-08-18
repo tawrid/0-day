@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2024-07-01</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2024-07-01</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-36401" target="_blank">CVE-2024-36401</a></h3>
+            <p>GeoServer is an open source server that allows users to share and edit geospatial data. Prior to versions 2.22.6, 2.23.6, 2.24.4, and 2.25.2, multiple OGC request parameters allow Remote Code Execution (RCE) by unauthenticated users through specially crafted input against a default GeoServer installation due to unsafely evaluating property names as XPath expressions.
+
+The GeoTools library API that GeoServer calls evaluates property/attribute names for feature types in a way that unsafely passes them to the commons-jxpath library which can execute arbitrary code when evaluating XPath expressions. This XPath evaluation is intended to be used only by complex feature types (i.e., Application Schema data stores) but is incorrectly being applied to simple feature types as well which makes this vulnerability apply to **ALL** GeoServer instances. No public PoC is provided but this vulnerability has been confirmed to be exploitable through WFS GetFeature, WFS GetPropertyValue, WMS GetMap, WMS GetFeatureInfo, WMS GetLegendGraphic and WPS Execute requests. This vulnerability can lead to executing arbitrary code.
+
+Versions 2.22.6, 2.23.6, 2.24.4, and 2.25.2 contain a patch for the issue. A workaround exists by removing the `gt-complex-x.y.jar` file from the GeoServer where `x.y` is the GeoTools version (e.g., `gt-complex-31.1.jar` if running GeoServer 2.25.1). This will remove the vulnerable code from GeoServer but may break some GeoServer functionality or prevent GeoServer from deploying if the gt-complex module is needed.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/Warxim/CVE-2022-41852?tab=readme-ov-file#workaround-for-cve-2022-41852" target="_blank">https://github.com/Warxim/CVE-2022-41852?tab=readme-ov-file#workaround-for-cve-2022-41852</a></li><li><a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv" target="_blank">https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv</a></li><li><a href="https://github.com/geotools/geotools/pull/4797" target="_blank">https://github.com/geotools/geotools/pull/4797</a></li><li><a href="https://github.com/geotools/geotools/security/advisories/GHSA-w3pj-wh35-fq8w" target="_blank">https://github.com/geotools/geotools/security/advisories/GHSA-w3pj-wh35-fq8w</a></li><li><a href="https://github.com/Warxim/CVE-2022-41852?tab=readme-ov-file#workaround-for-cve-2022-41852" target="_blank">https://github.com/Warxim/CVE-2022-41852?tab=readme-ov-file#workaround-for-cve-2022-41852</a></li><li><a href="https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv" target="_blank">https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv</a></li><li><a href="https://github.com/geotools/geotools/pull/4797" target="_blank">https://github.com/geotools/geotools/pull/4797</a></li><li><a href="https://github.com/geotools/geotools/security/advisories/GHSA-w3pj-wh35-fq8w" target="_blank">https://github.com/geotools/geotools/security/advisories/GHSA-w3pj-wh35-fq8w</a></li><li><a href="https://www.vicarius.io/vsociety/posts/geoserver-rce-cve-2024-36401" target="_blank">https://www.vicarius.io/vsociety/posts/geoserver-rce-cve-2024-36401</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-20399" target="_blank">CVE-2024-20399</a></h3>
+            <p>A vulnerability in the CLI of Cisco NX-OS Software could allow an authenticated user in possession of Administrator credentials to execute arbitrary commands as root on the underlying operating system of an affected device.
+
+This vulnerability is due to insufficient validation of arguments that are passed to specific configuration CLI commands. An attacker could exploit this vulnerability by including crafted input as the argument of an affected configuration CLI command. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system with the privileges of root.
+Note: To successfully exploit this vulnerability on a Cisco NX-OS device, an attacker must have Administrator credentials. The following Cisco devices already allow administrative users to access the underlying operating system through the bash-shell feature, so, for these devices, this vulnerability does not grant any additional privileges:
+
+Nexus 3000 Series Switches
+Nexus 7000 Series Switches that are running Cisco NX-OS Software releases 8.1(1) and later
+Nexus 9000 Series Switches in standalone NX-OS mode</p>
+        </div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-38475" target="_blank">CVE-2024-38475</a></h3>
+            <p>Improper escaping of output in mod_rewrite in Apache HTTP Server 2.4.59 and earlier allows an attacker to map URLs to filesystem locations that are permitted to be served by the server but are not intentionally/directly reachable by any URL, resulting in code execution or source code disclosure. 
+
+Substitutions in server context that use a backreferences or variables as the first segment of the substitution are affected.  Some unsafe RewiteRules will be broken by this change and the rewrite flag "UnsafePrefixStat" can be used to opt back in once ensuring the substitution is appropriately constrained.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/apache/httpd/commit/9a6157d1e2f7ab15963020381054b48782bc18cf" target="_blank">https://github.com/apache/httpd/commit/9a6157d1e2f7ab15963020381054b48782bc18cf</a></li></ul></div>
+</body></html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2025-04-25</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2025-04-25</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-3928" target="_blank">CVE-2025-3928</a></h3>
+            <p>Commvault Web Server has an unspecified vulnerability that can be exploited by a remote, authenticated attacker. According to the Commvault advisory: "Webservers can be compromised through bad actors creating and executing webshells." Fixed in version 11.36.46, 11.32.89, 11.28.141, and 11.20.217 for Windows and Linux platforms. This vulnerability was added to the CISA Known Exploited Vulnerabilities (KEV) Catalog on 2025-04-28.</p>
+        </div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-3935" target="_blank">CVE-2025-3935</a></h3>
+            <p>ScreenConnect versions 25.2.3 and earlier versions may be susceptible to a ViewState code injection attack. ASP.NET Web Forms use ViewState to preserve page and control state, with data encoded using Base64 protected by machine keys. 
+It is important to note that to obtain these machine keys, privileged system level access must be obtained. 
+
+
+
+If these machine keys are compromised, attackers could create and send a malicious ViewState to the website, potentially leading to remote code execution on the server. 
+
+
+
+The risk does not originate from a vulnerability introduced by ScreenConnect, but from platform level behavior.  This had no direct impact to ScreenConnect Client. ScreenConnect 2025.4 patch disables ViewState and removes any dependency on it.</p>
+        </div>
+</body></html>

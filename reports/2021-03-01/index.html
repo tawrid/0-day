@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2021-03-01</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2021-03-01</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-27876" target="_blank">CVE-2021-27876</a></h3>
+            <p>An issue was discovered in Veritas Backup Exec before 21.2. The communication between a client and an Agent requires successful authentication, which is typically completed over a secure TLS communication. However, due to a vulnerability in the SHA Authentication scheme, an attacker is able to gain unauthorized access and complete the authentication process. Subsequently, the client can execute data management protocol commands on the authenticated connection. By using crafted input parameters in one of these commands, an attacker can access an arbitrary file on the system using System privileges.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://packetstormsecurity.com/files/168506/Veritas-Backup-Exec-Agent-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/168506/Veritas-Backup-Exec-Agent-Remote-Code-Execution.html</a></li><li><a href="http://packetstormsecurity.com/files/168506/Veritas-Backup-Exec-Agent-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/168506/Veritas-Backup-Exec-Agent-Remote-Code-Execution.html</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-27877" target="_blank">CVE-2021-27877</a></h3>
+            <p>An issue was discovered in Veritas Backup Exec before 21.2. It supports multiple authentication schemes: SHA authentication is one of these. This authentication scheme is no longer used in current versions of the product, but hadn't yet been disabled. An attacker could remotely exploit this scheme to gain unauthorized access to an Agent and execute privileged commands.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://packetstormsecurity.com/files/168506/Veritas-Backup-Exec-Agent-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/168506/Veritas-Backup-Exec-Agent-Remote-Code-Execution.html</a></li><li><a href="http://packetstormsecurity.com/files/168506/Veritas-Backup-Exec-Agent-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/168506/Veritas-Backup-Exec-Agent-Remote-Code-Execution.html</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-27878" target="_blank">CVE-2021-27878</a></h3>
+            <p>An issue was discovered in Veritas Backup Exec before 21.2. The communication between a client and an Agent requires successful authentication, which is typically completed over a secure TLS communication. However, due to a vulnerability in the SHA Authentication scheme, an attacker is able to gain unauthorized access and complete the authentication process. Subsequently, the client can execute data management protocol commands on the authenticated connection. The attacker could use one of these commands to execute an arbitrary command on the system using system privileges.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://packetstormsecurity.com/files/168506/Veritas-Backup-Exec-Agent-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/168506/Veritas-Backup-Exec-Agent-Remote-Code-Execution.html</a></li><li><a href="http://packetstormsecurity.com/files/168506/Veritas-Backup-Exec-Agent-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/168506/Veritas-Backup-Exec-Agent-Remote-Code-Execution.html</a></li></ul></div>
+</body></html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2025-04-03</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2025-04-03</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-22457" target="_blank">CVE-2025-22457</a></h3>
+            <p>A stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.6, Ivanti Policy Secure before version 22.7R1.4, and Ivanti ZTA Gateways before version 22.8R2.2 allows a remote unauthenticated attacker to achieve remote code execution.</p>
+        </div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-30406" target="_blank">CVE-2025-30406</a></h3>
+            <p>Gladinet CentreStack through 16.1.10296.56315 (fixed in 16.4.10315.56368) has a deserialization vulnerability due to the CentreStack portal's hardcoded machineKey use, as exploited in the wild in March 2025. This enables threat actors (who know the machineKey) to serialize a payload for server-side deserialization to achieve remote code execution. NOTE: a CentreStack admin can manually delete the machineKey defined in portal\web.config.</p>
+        </div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-31161" target="_blank">CVE-2025-31161</a></h3>
+            <p>CrushFTP 10 before 10.8.4 and 11 before 11.3.1 allows authentication bypass and takeover of the crushadmin account (unless a DMZ proxy instance is used), as exploited in the wild in March and April 2025, aka "Unauthenticated HTTP(S) port access." A race condition exists in the AWS4-HMAC (compatible with S3) authorization method of the HTTP component of the FTP server. The server first verifies the existence of the user by performing a call to login_user_pass() with no password requirement. This will authenticate the session through the HMAC verification process and up until the server checks for user verification once more. The vulnerability can be further stabilized, eliminating the need for successfully triggering a race condition, by sending a mangled AWS4-HMAC header. By providing only the username and a following slash (/), the server will successfully find a username, which triggers the successful anypass authentication process, but the server will fail to find the expected SignedHeaders entry, resulting in an index-out-of-bounds error that stops the code from reaching the session cleanup. Together, these issues make it trivial to authenticate as any known or guessable user (e.g., crushadmin), and can lead to a full compromise of the system by obtaining an administrative account.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://attackerkb.com/topics/k0EgiL9Psz/cve-2025-2825/rapid7-analysis" target="_blank">https://attackerkb.com/topics/k0EgiL9Psz/cve-2025-2825/rapid7-analysis</a></li><li><a href="https://projectdiscovery.io/blog/crushftp-authentication-bypass" target="_blank">https://projectdiscovery.io/blog/crushftp-authentication-bypass</a></li><li><a href="https://www.huntress.com/blog/crushftp-cve-2025-31161-auth-bypass-and-post-exploitation" target="_blank">https://www.huntress.com/blog/crushftp-cve-2025-31161-auth-bypass-and-post-exploitation</a></li><li><a href="https://www.vicarius.io/vsociety/posts/cve-2025-31161-detect-crushftp-vulnerability" target="_blank">https://www.vicarius.io/vsociety/posts/cve-2025-31161-detect-crushftp-vulnerability</a></li></ul></div>
+</body></html>

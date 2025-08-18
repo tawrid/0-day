@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2022-09-26</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2022-09-26</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2022-41352" target="_blank">CVE-2022-41352</a></h3>
+            <p>An issue was discovered in Zimbra Collaboration (ZCS) 8.8.15 and 9.0. An attacker can upload arbitrary files through amavis via a cpio loophole (extraction to /opt/zimbra/jetty/webapps/zimbra/public) that can lead to incorrect access to any other user accounts. Zimbra recommends pax over cpio. Also, pax is in the prerequisites of Zimbra on Ubuntu; however, pax is no longer part of a default Red Hat installation after RHEL 6 (or CentOS 6). Once pax is installed, amavis automatically prefers it over cpio.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://packetstormsecurity.com/files/169458/Zimbra-Collaboration-Suite-TAR-Path-Traversal.html" target="_blank">http://packetstormsecurity.com/files/169458/Zimbra-Collaboration-Suite-TAR-Path-Traversal.html</a></li><li><a href="http://packetstormsecurity.com/files/169458/Zimbra-Collaboration-Suite-TAR-Path-Traversal.html" target="_blank">http://packetstormsecurity.com/files/169458/Zimbra-Collaboration-Suite-TAR-Path-Traversal.html</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2022-2856" target="_blank">CVE-2022-2856</a></h3>
+            <p>Insufficient validation of untrusted input in Intents in Google Chrome on Android prior to 104.0.5112.101 allowed a remote attacker to arbitrarily browse to a malicious website via a crafted HTML page.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://crbug.com/1345630" target="_blank">https://crbug.com/1345630</a></li><li><a href="https://crbug.com/1345630" target="_blank">https://crbug.com/1345630</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2022-3038" target="_blank">CVE-2022-3038</a></h3>
+            <p>Use after free in Network Service in Google Chrome prior to 105.0.5195.52 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://packetstormsecurity.com/files/168596/Google-Chrome-103.0.5060.53-network-URLLoader-NotifyCompleted-Heap-Use-After-Free.html" target="_blank">http://packetstormsecurity.com/files/168596/Google-Chrome-103.0.5060.53-network-URLLoader-NotifyCompleted-Heap-Use-After-Free.html</a></li><li><a href="https://crbug.com/1340253" target="_blank">https://crbug.com/1340253</a></li><li><a href="http://packetstormsecurity.com/files/168596/Google-Chrome-103.0.5060.53-network-URLLoader-NotifyCompleted-Heap-Use-After-Free.html" target="_blank">http://packetstormsecurity.com/files/168596/Google-Chrome-103.0.5060.53-network-URLLoader-NotifyCompleted-Heap-Use-After-Free.html</a></li><li><a href="https://crbug.com/1340253" target="_blank">https://crbug.com/1340253</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2022-3075" target="_blank">CVE-2022-3075</a></h3>
+            <p>Insufficient data validation in Mojo in Google Chrome prior to 105.0.5195.102 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page.</p>
+        </div>
+</body></html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2025-03-19</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2025-03-19</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-30154" target="_blank">CVE-2025-30154</a></h3>
+            <p>reviewdog/action-setup is a GitHub action that installs reviewdog. reviewdog/action-setup@v1 was compromised March 11, 2025, between 18:42 and 20:31 UTC, with malicious code added that dumps exposed secrets to Github Actions Workflow Logs. Other reviewdog actions that use `reviewdog/action-setup@v1` that would also be compromised, regardless of version or pinning method, are reviewdog/action-shellcheck, reviewdog/action-composite-template, reviewdog/action-staticcheck, reviewdog/action-ast-grep, and reviewdog/action-typos.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/reviewdog/action-setup/commit/3f401fe1d58fe77e10d665ab713057375e39b887" target="_blank">https://github.com/reviewdog/action-setup/commit/3f401fe1d58fe77e10d665ab713057375e39b887</a></li><li><a href="https://github.com/reviewdog/action-setup/commit/f0d342d24037bb11d26b9bd8496e0808ba32e9ec" target="_blank">https://github.com/reviewdog/action-setup/commit/f0d342d24037bb11d26b9bd8496e0808ba32e9ec</a></li><li><a href="https://github.com/reviewdog/reviewdog/issues/2079" target="_blank">https://github.com/reviewdog/reviewdog/issues/2079</a></li><li><a href="https://github.com/reviewdog/reviewdog/security/advisories/GHSA-qmg3-hpqr-gqvc" target="_blank">https://github.com/reviewdog/reviewdog/security/advisories/GHSA-qmg3-hpqr-gqvc</a></li><li><a href="https://www.wiz.io/blog/new-github-action-supply-chain-attack-reviewdog-action-setup" target="_blank">https://www.wiz.io/blog/new-github-action-supply-chain-attack-reviewdog-action-setup</a></li></ul></div>
+</body></html>

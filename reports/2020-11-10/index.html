@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2020-11-10</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2020-11-10</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2020-13927" target="_blank">CVE-2020-13927</a></h3>
+            <p>The previous default setting for Airflow's Experimental API was to allow all API requests without authentication, but this poses security risks to users who miss this fact. From Airflow 1.10.11 the default has been changed to deny all requests by default and is documented at https://airflow.apache.org/docs/1.10.11/security.html#api-authentication. Note this change fixes it for new installs but existing users need to change their config to default `[api]auth_backend = airflow.api.auth.backend.deny_all` as mentioned in the Updating Guide: https://github.com/apache/airflow/blob/1.10.11/UPDATING.md#experimental-api-will-deny-all-request-by-default</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://packetstormsecurity.com/files/162908/Apache-Airflow-1.10.10-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/162908/Apache-Airflow-1.10.10-Remote-Code-Execution.html</a></li><li><a href="http://packetstormsecurity.com/files/174764/Apache-Airflow-1.10.10-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/174764/Apache-Airflow-1.10.10-Remote-Code-Execution.html</a></li><li><a href="http://packetstormsecurity.com/files/162908/Apache-Airflow-1.10.10-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/162908/Apache-Airflow-1.10.10-Remote-Code-Execution.html</a></li><li><a href="http://packetstormsecurity.com/files/174764/Apache-Airflow-1.10.10-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/174764/Apache-Airflow-1.10.10-Remote-Code-Execution.html</a></li></ul></div>
+</body></html>

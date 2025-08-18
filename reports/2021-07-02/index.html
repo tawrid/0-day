@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2021-07-02</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2021-07-02</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-30554" target="_blank">CVE-2021-30554</a></h3>
+            <p>Use after free in WebGL in Google Chrome prior to 91.0.4472.114 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.</p>
+        </div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-34527" target="_blank">CVE-2021-34527</a></h3>
+            <p><p>A remote code execution vulnerability exists when the Windows Print Spooler service improperly performs privileged file operations. An attacker who successfully exploited this vulnerability could run arbitrary code with SYSTEM privileges. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.</p>
+<p>UPDATE July 7, 2021: The security update for Windows Server 2012, Windows Server 2016 and Windows 10, Version 1607 have been released. Please see the Security Updates table for the applicable update for your system. We recommend that you install these updates immediately. If you are unable to install these updates, see the FAQ and Workaround sections in this CVE for information on how to help protect your system from this vulnerability.</p>
+<p>In addition to installing the updates, in order to secure your system, you must confirm that the following registry settings are set to 0 (zero) or are not defined (<strong>Note</strong>: These registry keys do not exist by default, and therefore are already at the secure setting.), also that your Group Policy setting are correct (see FAQ):</p>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers\PointAndPrint</li>
+<li>NoWarningNoElevationOnInstall = 0 (DWORD) or not defined (default setting)</li>
+<li>UpdatePromptSettings = 0 (DWORD) or not defined (default setting)</li>
+</ul>
+<p><strong>Having NoWarningNoElevationOnInstall set to 1 makes your system vulnerable by design.</strong></p>
+<p>UPDATE July 6, 2021: Microsoft has completed the investigation and has released security updates to address this vulnerability. Please see the Security Updates table for the applicable update for your system. We recommend that you install these updates immediately. If you are unable to install these updates, see the FAQ and Workaround sections in this CVE for information on how to help protect your system from this vulnerability. See also <a href="https://support.microsoft.com/topic/31b91c02-05bc-4ada-a7ea-183b129578a7">KB5005010: Restricting installation of new printer drivers after applying the July 6, 2021 updates</a>.</p>
+<p>Note that the security updates released on and after July 6, 2021 contain protections for CVE-2021-1675 and the additional remote code execution exploit in the Windows Print Spooler service known as “PrintNightmare”, documented in CVE-2021-34527.</p>
+</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://packetstormsecurity.com/files/167261/Print-Spooler-Remote-DLL-Injection.html" target="_blank">http://packetstormsecurity.com/files/167261/Print-Spooler-Remote-DLL-Injection.html</a></li><li><a href="http://packetstormsecurity.com/files/167261/Print-Spooler-Remote-DLL-Injection.html" target="_blank">http://packetstormsecurity.com/files/167261/Print-Spooler-Remote-DLL-Injection.html</a></li><li><a href="https://www.vicarius.io/vsociety/posts/cve-2021-34527-printnightmare-detection-script" target="_blank">https://www.vicarius.io/vsociety/posts/cve-2021-34527-printnightmare-detection-script</a></li><li><a href="https://www.vicarius.io/vsociety/posts/cve-2021-34527-printnightmare-mitigation-script" target="_blank">https://www.vicarius.io/vsociety/posts/cve-2021-34527-printnightmare-mitigation-script</a></li></ul></div>
+</body></html>

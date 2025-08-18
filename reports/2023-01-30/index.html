@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2023-01-30</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2023-01-30</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-0266" target="_blank">CVE-2023-0266</a></h3>
+            <p>A use after free vulnerability exists in the ALSA PCM package in the Linux Kernel. SNDRV_CTL_IOCTL_ELEM_{READ|WRITE}32 is missing locks that can be used in a use-after-free that can result in a priviledge escalation to gain ring0 access from the system user. We recommend upgrading past commit 56b88b50565cd8b946a2d00b0c83927b7ebb055e</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/torvalds/linux/commit/56b88b50565cd8b946a2d00b0c83927b7ebb055e" target="_blank">https://github.com/torvalds/linux/commit/56b88b50565cd8b946a2d00b0c83927b7ebb055e</a></li><li><a href="https://github.com/torvalds/linux/commit/becf9e5d553c2389d857a3c178ce80fdb34a02e1" target="_blank">https://github.com/torvalds/linux/commit/becf9e5d553c2389d857a3c178ce80fdb34a02e1</a></li><li><a href="https://github.com/torvalds/linux/commit/56b88b50565cd8b946a2d00b0c83927b7ebb055e" target="_blank">https://github.com/torvalds/linux/commit/56b88b50565cd8b946a2d00b0c83927b7ebb055e</a></li><li><a href="https://github.com/torvalds/linux/commit/becf9e5d553c2389d857a3c178ce80fdb34a02e1" target="_blank">https://github.com/torvalds/linux/commit/becf9e5d553c2389d857a3c178ce80fdb34a02e1</a></li></ul></div>
+</body></html>

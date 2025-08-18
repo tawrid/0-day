@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2023-04-24</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2023-04-24</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-27524" target="_blank">CVE-2023-27524</a></h3>
+            <p>Session Validation attacks in Apache Superset versions up to and including 2.0.1. Installations that have not altered the default configured SECRET_KEY according to installation instructions allow for an attacker to authenticate and access unauthorized resources. This does not affect Superset administrators who have changed the default value for SECRET_KEY config.
+
+All superset installations should always set a unique secure random SECRET_KEY. Your SECRET_KEY is used to securely sign all session cookies and encrypting sensitive information on the database.
+Add a strong SECRET_KEY to your `superset_config.py` file like:
+
+SECRET_KEY = <YOUR_OWN_RANDOM_GENERATED_SECRET_KEY>
+
+Alternatively you can set it with `SUPERSET_SECRET_KEY` environment variable.
+</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://packetstormsecurity.com/files/172522/Apache-Superset-2.0.0-Authentication-Bypass.html" target="_blank">https://packetstormsecurity.com/files/172522/Apache-Superset-2.0.0-Authentication-Bypass.html</a></li><li><a href="https://packetstormsecurity.com/files/175094/Apache-Superset-2.0.0-Remote-Code-Execution.html" target="_blank">https://packetstormsecurity.com/files/175094/Apache-Superset-2.0.0-Remote-Code-Execution.html</a></li><li><a href="https://packetstormsecurity.com/files/172522/Apache-Superset-2.0.0-Authentication-Bypass.html" target="_blank">https://packetstormsecurity.com/files/172522/Apache-Superset-2.0.0-Authentication-Bypass.html</a></li><li><a href="https://packetstormsecurity.com/files/175094/Apache-Superset-2.0.0-Remote-Code-Execution.html" target="_blank">https://packetstormsecurity.com/files/175094/Apache-Superset-2.0.0-Remote-Code-Execution.html</a></li></ul></div>
+</body></html>

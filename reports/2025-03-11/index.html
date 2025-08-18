@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2025-03-11</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2025-03-11</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-54085" target="_blank">CVE-2024-54085</a></h3>
+            <p>AMI’s SPx contains
+a vulnerability in the BMC where an Attacker may bypass authentication remotely through the Redfish Host Interface. A successful exploitation
+of this vulnerability may lead to a loss of confidentiality, integrity, and/or
+availability.</p>
+        </div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-27363" target="_blank">CVE-2025-27363</a></h3>
+            <p>An out of bounds write exists in FreeType versions 2.13.0 and below (newer versions of FreeType are not vulnerable) when attempting to parse font subglyph structures related to TrueType GX and variable font files. The vulnerable code assigns a signed short value to an unsigned long and then adds a static value causing it to wrap around and allocate too small of a heap buffer. The code then writes up to 6 signed long integers out of bounds relative to this buffer. This may result in arbitrary code execution. This vulnerability may have been exploited in the wild.</p>
+        </div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-24054" target="_blank">CVE-2025-24054</a></h3>
+            <p>External control of file name or path in Windows NTLM allows an unauthorized attacker to perform spoofing over a network.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://www.vicarius.io/vsociety/posts/cve-2025-24054-spoofing-vulnerability-in-windows-ntlm-by-microsoft-detection-script" target="_blank">https://www.vicarius.io/vsociety/posts/cve-2025-24054-spoofing-vulnerability-in-windows-ntlm-by-microsoft-detection-script</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-24983" target="_blank">CVE-2025-24983</a></h3>
+            <p>Use after free in Windows Win32 Kernel Subsystem allows an authorized attacker to elevate privileges locally.</p>
+        </div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-24984" target="_blank">CVE-2025-24984</a></h3>
+            <p>Insertion of sensitive information into log file in Windows NTFS allows an unauthorized attacker to disclose information with a physical attack.</p>
+        </div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-24985" target="_blank">CVE-2025-24985</a></h3>
+            <p>Integer overflow or wraparound in Windows Fast FAT Driver allows an unauthorized attacker to execute code locally.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://www.vicarius.io/vsociety/posts/cve-2025-24985-integer-overflow-vulnerability-in-microsoft-windows-fast-fat-driver-detection-script" target="_blank">https://www.vicarius.io/vsociety/posts/cve-2025-24985-integer-overflow-vulnerability-in-microsoft-windows-fast-fat-driver-detection-script</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-24991" target="_blank">CVE-2025-24991</a></h3>
+            <p>Out-of-bounds read in Windows NTFS allows an authorized attacker to disclose information locally.</p>
+        </div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-24993" target="_blank">CVE-2025-24993</a></h3>
+            <p>Heap-based buffer overflow in Windows NTFS allows an unauthorized attacker to execute code locally.</p>
+        </div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-26633" target="_blank">CVE-2025-26633</a></h3>
+            <p>Improper neutralization in Microsoft Management Console allows an unauthorized attacker to bypass a security feature locally.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://www.vicarius.io/vsociety/posts/cve-2025-26633-security-feature-bypass-in-microsoft-management-console-detection-script" target="_blank">https://www.vicarius.io/vsociety/posts/cve-2025-26633-security-feature-bypass-in-microsoft-management-console-detection-script</a></li><li><a href="https://www.vicarius.io/vsociety/posts/cve-2025-26633-security-feature-bypass-in-microsoft-management-console-mitigation-script" target="_blank">https://www.vicarius.io/vsociety/posts/cve-2025-26633-security-feature-bypass-in-microsoft-management-console-mitigation-script</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-24201" target="_blank">CVE-2025-24201</a></h3>
+            <p>An out-of-bounds write issue was addressed with improved checks to prevent unauthorized actions. This issue is fixed in visionOS 2.3.2, iOS 18.3.2 and iPadOS 18.3.2, macOS Sequoia 15.3.2, Safari 18.3.1, watchOS 11.4, iPadOS 17.7.6, iOS 16.7.11 and iPadOS 16.7.11, iOS 15.8.4 and iPadOS 15.8.4. Maliciously crafted web content may be able to break out of Web Content sandbox. This is a supplementary fix for an attack that was blocked in iOS 17.2. (Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 17.2.).</p>
+        </div>
+</body></html>

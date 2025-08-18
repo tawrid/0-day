@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2022-07-18</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2022-07-18</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2022-33891" target="_blank">CVE-2022-33891</a></h3>
+            <p>The Apache Spark UI offers the possibility to enable ACLs via the configuration option spark.acls.enable. With an authentication filter, this checks whether a user has access permissions to view or modify the application. If ACLs are enabled, a code path in HttpSecurityFilter can allow someone to perform impersonation by providing an arbitrary user name. A malicious user might then be able to reach a permission check function that will ultimately build a Unix shell command based on their input, and execute it. This will result in arbitrary shell command execution as the user Spark is currently running as. This affects Apache Spark versions 3.0.3 and earlier, versions 3.1.1 to 3.1.2, and versions 3.2.0 to 3.2.1.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://packetstormsecurity.com/files/168309/Apache-Spark-Unauthenticated-Command-Injection.html" target="_blank">http://packetstormsecurity.com/files/168309/Apache-Spark-Unauthenticated-Command-Injection.html</a></li><li><a href="http://packetstormsecurity.com/files/168309/Apache-Spark-Unauthenticated-Command-Injection.html" target="_blank">http://packetstormsecurity.com/files/168309/Apache-Spark-Unauthenticated-Command-Injection.html</a></li></ul></div>
+</body></html>

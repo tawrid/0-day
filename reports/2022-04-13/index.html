@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2022-04-13</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2022-04-13</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2022-22960" target="_blank">CVE-2022-22960</a></h3>
+            <p>VMware Workspace ONE Access, Identity Manager and vRealize Automation contain a privilege escalation vulnerability due to improper permissions in support scripts. A malicious actor with local access can escalate privileges to 'root'.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://packetstormsecurity.com/files/171918/Mware-Workspace-ONE-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/171918/Mware-Workspace-ONE-Remote-Code-Execution.html</a></li><li><a href="http://packetstormsecurity.com/files/171918/VMware-Workspace-ONE-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/171918/VMware-Workspace-ONE-Remote-Code-Execution.html</a></li><li><a href="http://packetstormsecurity.com/files/171935/VMware-Workspace-ONE-Access-Privilege-Escalation.html" target="_blank">http://packetstormsecurity.com/files/171935/VMware-Workspace-ONE-Access-Privilege-Escalation.html</a></li><li><a href="http://packetstormsecurity.com/files/171918/Mware-Workspace-ONE-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/171918/Mware-Workspace-ONE-Remote-Code-Execution.html</a></li><li><a href="http://packetstormsecurity.com/files/171918/VMware-Workspace-ONE-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/171918/VMware-Workspace-ONE-Remote-Code-Execution.html</a></li><li><a href="http://packetstormsecurity.com/files/171935/VMware-Workspace-ONE-Access-Privilege-Escalation.html" target="_blank">http://packetstormsecurity.com/files/171935/VMware-Workspace-ONE-Access-Privilege-Escalation.html</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2022-24816" target="_blank">CVE-2022-24816</a></h3>
+            <p>JAI-EXT is an open-source project which aims to extend the Java Advanced Imaging (JAI) API. Programs allowing Jiffle script to be provided via network request can lead to a Remote Code Execution as the Jiffle script is compiled into Java code via Janino, and executed. In particular, this affects the downstream GeoServer project. Version 1.2.22 will contain a patch that disables the ability to inject malicious code into the resulting script. Users unable to upgrade may negate the ability to compile Jiffle scripts from the final application, by removing janino-x.y.z.jar from the classpath.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/geosolutions-it/jai-ext/commit/cb1d6565d38954676b0a366da4f965fef38da1cb" target="_blank">https://github.com/geosolutions-it/jai-ext/commit/cb1d6565d38954676b0a366da4f965fef38da1cb</a></li><li><a href="https://github.com/geosolutions-it/jai-ext/security/advisories/GHSA-v92f-jx6p-73rx" target="_blank">https://github.com/geosolutions-it/jai-ext/security/advisories/GHSA-v92f-jx6p-73rx</a></li><li><a href="https://github.com/geosolutions-it/jai-ext/commit/cb1d6565d38954676b0a366da4f965fef38da1cb" target="_blank">https://github.com/geosolutions-it/jai-ext/commit/cb1d6565d38954676b0a366da4f965fef38da1cb</a></li><li><a href="https://github.com/geosolutions-it/jai-ext/security/advisories/GHSA-v92f-jx6p-73rx" target="_blank">https://github.com/geosolutions-it/jai-ext/security/advisories/GHSA-v92f-jx6p-73rx</a></li></ul></div>
+</body></html>

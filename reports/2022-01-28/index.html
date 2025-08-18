@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2022-01-28</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2022-01-28</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-40407" target="_blank">CVE-2021-40407</a></h3>
+            <p>An OS command injection vulnerability exists in the device network settings functionality of reolink RLC-410W v3.0.0.136_20121102. At [1] or [2], based on DDNS type, the ddns->domain variable, that has the value of the domain parameter provided through the SetDdns API, is not validated properly. This would lead to an OS command injection. An attacker can send an HTTP request to trigger this vulnerability.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://talosintelligence.com/vulnerability_reports/TALOS-2021-1424" target="_blank">https://talosintelligence.com/vulnerability_reports/TALOS-2021-1424</a></li><li><a href="https://talosintelligence.com/vulnerability_reports/TALOS-2021-1424" target="_blank">https://talosintelligence.com/vulnerability_reports/TALOS-2021-1424</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-4034" target="_blank">CVE-2021-4034</a></h3>
+            <p>A local privilege escalation vulnerability was found on polkit's pkexec utility. The pkexec application is a setuid tool designed to allow unprivileged users to run commands as privileged users according predefined policies. The current version of pkexec doesn't handle the calling parameters count correctly and ends trying to execute environment variables as commands. An attacker can leverage this by crafting environment variables in such a way it'll induce pkexec to execute arbitrary code. When successfully executed the attack can cause a local privilege escalation given unprivileged users administrative rights on the target machine.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://packetstormsecurity.com/files/166196/Polkit-pkexec-Local-Privilege-Escalation.html" target="_blank">http://packetstormsecurity.com/files/166196/Polkit-pkexec-Local-Privilege-Escalation.html</a></li><li><a href="http://packetstormsecurity.com/files/166200/Polkit-pkexec-Privilege-Escalation.html" target="_blank">http://packetstormsecurity.com/files/166200/Polkit-pkexec-Privilege-Escalation.html</a></li><li><a href="https://www.qualys.com/2022/01/25/cve-2021-4034/pwnkit.txt" target="_blank">https://www.qualys.com/2022/01/25/cve-2021-4034/pwnkit.txt</a></li><li><a href="https://www.secpod.com/blog/local-privilege-escalation-vulnerability-in-major-linux-distributions-cve-2021-4034/" target="_blank">https://www.secpod.com/blog/local-privilege-escalation-vulnerability-in-major-linux-distributions-cve-2021-4034/</a></li><li><a href="http://packetstormsecurity.com/files/166196/Polkit-pkexec-Local-Privilege-Escalation.html" target="_blank">http://packetstormsecurity.com/files/166196/Polkit-pkexec-Local-Privilege-Escalation.html</a></li><li><a href="http://packetstormsecurity.com/files/166200/Polkit-pkexec-Privilege-Escalation.html" target="_blank">http://packetstormsecurity.com/files/166200/Polkit-pkexec-Privilege-Escalation.html</a></li><li><a href="https://www.qualys.com/2022/01/25/cve-2021-4034/pwnkit.txt" target="_blank">https://www.qualys.com/2022/01/25/cve-2021-4034/pwnkit.txt</a></li><li><a href="https://www.secpod.com/blog/local-privilege-escalation-vulnerability-in-major-linux-distributions-cve-2021-4034/" target="_blank">https://www.secpod.com/blog/local-privilege-escalation-vulnerability-in-major-linux-distributions-cve-2021-4034/</a></li><li><a href="https://www.vicarius.io/vsociety/posts/pwnkit-pkexec-lpe-cve-2021-4034" target="_blank">https://www.vicarius.io/vsociety/posts/pwnkit-pkexec-lpe-cve-2021-4034</a></li></ul></div>
+</body></html>

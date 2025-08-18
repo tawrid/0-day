@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2023-10-27</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2023-10-27</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-46604" target="_blank">CVE-2023-46604</a></h3>
+            <p>The Java OpenWire protocol marshaller is vulnerable to Remote Code 
+Execution. This vulnerability may allow a remote attacker with network 
+access to either a Java-based OpenWire broker or client to run arbitrary
+ shell commands by manipulating serialized class types in the OpenWire 
+protocol to cause either the client or the broker (respectively) to 
+instantiate any class on the classpath.
+
+Users are recommended to upgrade
+ both brokers and clients to version 5.15.16, 5.16.7, 5.17.6, or 5.18.3 
+which fixes this issue.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://packetstormsecurity.com/files/175676/Apache-ActiveMQ-Unauthenticated-Remote-Code-Execution.html" target="_blank">https://packetstormsecurity.com/files/175676/Apache-ActiveMQ-Unauthenticated-Remote-Code-Execution.html</a></li><li><a href="https://packetstormsecurity.com/files/175676/Apache-ActiveMQ-Unauthenticated-Remote-Code-Execution.html" target="_blank">https://packetstormsecurity.com/files/175676/Apache-ActiveMQ-Unauthenticated-Remote-Code-Execution.html</a></li></ul></div>
+</body></html>

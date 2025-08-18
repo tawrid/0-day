@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2023-08-17</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2023-08-17</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-36844" target="_blank">CVE-2023-36844</a></h3>
+            <p>A PHP External Variable Modification vulnerability in J-Web of Juniper Networks Junos OS on EX Series allows an unauthenticated, network-based attacker to control certain, important environment variables.
+
+Using a crafted request an attacker is able to modify 
+
+certain PHP environment variables leading to partial loss of integrity, which may allow chaining to other vulnerabilities.
+This issue affects Juniper Networks Junos OS on EX Series:
+
+
+
+  *  All versions prior to 20.4R3-S9;
+  *  21.1 versions 21.1R1 and later;
+  *  21.2 versions prior to 21.2R3-S7;
+  *  21.3 versions 
+
+prior to 
+
+ 21.3R3-S5;
+  *  21.4 versions 
+
+prior to 
+
+21.4R3-S5;
+  *  22.1 versions 
+
+prior to 
+
+22.1R3-S4;
+  *  22.2 versions 
+
+prior to 
+
+22.2R3-S2;
+  *  22.3 versions 
+
+prior to 22.3R3-S1;
+  *  22.4 versions 
+
+prior to 
+
+22.4R2-S2, 22.4R3;
+  *  23.2 versions prior to 
+
+23.2R1-S1, 23.2R2.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://packetstormsecurity.com/files/174865/Juniper-SRX-Firewall-EX-Switch-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/174865/Juniper-SRX-Firewall-EX-Switch-Remote-Code-Execution.html</a></li><li><a href="http://packetstormsecurity.com/files/174865/Juniper-SRX-Firewall-EX-Switch-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/174865/Juniper-SRX-Firewall-EX-Switch-Remote-Code-Execution.html</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-36845" target="_blank">CVE-2023-36845</a></h3>
+            <p>A PHP External Variable Modification vulnerability in J-Web of Juniper Networks Junos OS on EX Series 
+
+and SRX Series 
+
+allows an unauthenticated, network-based attacker to remotely execute code.
+
+Using a crafted request which sets the variable PHPRC an attacker is able to modify the PHP execution environment allowing the injection und execution of code.
+
+
+This issue affects Juniper Networks Junos OS on EX Series
+
+
+and 
+
+
+SRX Series:
+
+
+
+  *  All versions prior to 
+
+20.4R3-S9;
+  *  21.1 versions 21.1R1 and later;
+  *  21.2 versions prior to 21.2R3-S7;
+  *  21.3 versions prior to 21.3R3-S5;
+  *  21.4 versions prior to 21.4R3-S5;
+  *  22.1 versions 
+
+prior to 
+
+22.1R3-S4;
+  *  22.2 versions 
+
+prior to 
+
+22.2R3-S2;
+  *  22.3 versions 
+
+prior to 
+
+22.3R2-S2, 22.3R3-S1;
+  *  22.4 versions 
+
+prior to 
+
+22.4R2-S1, 22.4R3;
+  *  23.2 versions prior to 23.2R1-S1, 23.2R2.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://packetstormsecurity.com/files/174865/Juniper-SRX-Firewall-EX-Switch-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/174865/Juniper-SRX-Firewall-EX-Switch-Remote-Code-Execution.html</a></li><li><a href="http://packetstormsecurity.com/files/176969/Juniper-SRX-Firewall-EX-Switch-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/176969/Juniper-SRX-Firewall-EX-Switch-Remote-Code-Execution.html</a></li><li><a href="http://packetstormsecurity.com/files/174865/Juniper-SRX-Firewall-EX-Switch-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/174865/Juniper-SRX-Firewall-EX-Switch-Remote-Code-Execution.html</a></li><li><a href="http://packetstormsecurity.com/files/176969/Juniper-SRX-Firewall-EX-Switch-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/176969/Juniper-SRX-Firewall-EX-Switch-Remote-Code-Execution.html</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-36846" target="_blank">CVE-2023-36846</a></h3>
+            <p>A Missing Authentication for Critical Function vulnerability in Juniper Networks Junos OS on SRX Series allows an unauthenticated, network-based attacker to cause limited impact to the file system integrity.
+
+
+
+With a specific request to user.php that doesn't require authentication an attacker is able to upload arbitrary files via J-Web, leading to a loss of 
+
+integrity
+
+for a certain 
+
+part of the file system, which may allow chaining to other vulnerabilities.
+
+
+This issue affects Juniper Networks Junos OS on SRX Series:
+
+
+
+  *  All versions prior to 20.4R3-S8;
+  *  21.1 versions 21.1R1 and later;
+  *  21.2 versions prior to 21.2R3-S6;
+  *  21.3 versions 
+
+prior to 
+
+ 21.3R3-S5;
+  *  21.4 versions 
+
+prior to 
+
+21.4R3-S5;
+  *  22.1 versions 
+
+prior to 
+
+22.1R3-S3;
+  *  22.2 versions 
+
+prior to 
+
+22.2R3-S2;
+  *  22.3 versions 
+
+prior to 
+
+22.3R2-S2, 22.3R3;
+  *  22.4 versions 
+
+prior to 
+
+22.4R2-S1, 22.4R3.
+
+
+
+
+</p>
+        </div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-36847" target="_blank">CVE-2023-36847</a></h3>
+            <p>A Missing Authentication for Critical Function vulnerability in Juniper Networks Junos OS on EX Series allows an unauthenticated, network-based attacker to cause limited impact to the file system integrity.
+
+
+
+
+
+With a specific request to installAppPackage.php that doesn't require authentication an attacker is able to upload arbitrary files via J-Web, leading to a loss of 
+
+integrity
+
+for a certain 
+
+part of the file system, which may allow chaining to other vulnerabilities.
+
+
+This issue affects Juniper Networks Junos OS on EX Series:
+
+
+
+  *  All versions prior to 20.4R3-S8;
+  *  21.1 versions 21.1R1 and later;
+  *  21.2 versions prior to 21.2R3-S6;
+  *  21.3 versions 
+
+prior to 
+
+ 21.3R3-S5;
+  *  21.4 versions 
+
+prior to 
+
+21.4R3-S4;
+  *  22.1 versions 
+
+prior to 
+
+22.1R3-S3;
+  *  22.2 versions 
+
+prior to 
+
+22.2R3-S1;
+  *  22.3 versions 
+
+prior to 
+
+22.3R2-S2, 22.3R3;
+  *  22.4 versions 
+
+prior to 
+
+22.4R2-S1, 22.4R3.
+
+
+
+
+</p>
+        </div>
+</body></html>

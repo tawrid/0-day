@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2024-12-24</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2024-12-24</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-53150" target="_blank">CVE-2024-53150</a></h3>
+            <p>In the Linux kernel, the following vulnerability has been resolved:
+
+ALSA: usb-audio: Fix out of bounds reads when finding clock sources
+
+The current USB-audio driver code doesn't check bLength of each
+descriptor at traversing for clock descriptors.  That is, when a
+device provides a bogus descriptor with a shorter bLength, the driver
+might hit out-of-bounds reads.
+
+For addressing it, this patch adds sanity checks to the validator
+functions for the clock descriptor traversal.  When the descriptor
+length is shorter than expected, it's skipped in the loop.
+
+For the clock source and clock multiplier descriptors, we can just
+check bLength against the sizeof() of each descriptor type.
+OTOH, the clock selector descriptor of UAC2 and UAC3 has an array
+of bNrInPins elements and two more fields at its tail, hence those
+have to be checked in addition to the sizeof() check.</p>
+        </div>
+</body></html>

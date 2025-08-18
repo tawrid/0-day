@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2022-03-10</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2022-03-10</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2022-0847" target="_blank">CVE-2022-0847</a></h3>
+            <p>A flaw was found in the way the "flags" member of the new pipe buffer structure was lacking proper initialization in copy_page_to_iter_pipe and push_pipe functions in the Linux kernel and could thus contain stale values. An unprivileged local user could use this flaw to write to pages in the page cache backed by read only files and as such escalate their privileges on the system.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://packetstormsecurity.com/files/166229/Dirty-Pipe-Linux-Privilege-Escalation.html" target="_blank">http://packetstormsecurity.com/files/166229/Dirty-Pipe-Linux-Privilege-Escalation.html</a></li><li><a href="http://packetstormsecurity.com/files/166230/Dirty-Pipe-SUID-Binary-Hijack-Privilege-Escalation.html" target="_blank">http://packetstormsecurity.com/files/166230/Dirty-Pipe-SUID-Binary-Hijack-Privilege-Escalation.html</a></li><li><a href="http://packetstormsecurity.com/files/166258/Dirty-Pipe-Local-Privilege-Escalation.html" target="_blank">http://packetstormsecurity.com/files/166258/Dirty-Pipe-Local-Privilege-Escalation.html</a></li><li><a href="http://packetstormsecurity.com/files/176534/Linux-4.20-KTLS-Read-Only-Write.html" target="_blank">http://packetstormsecurity.com/files/176534/Linux-4.20-KTLS-Read-Only-Write.html</a></li><li><a href="https://dirtypipe.cm4all.com/" target="_blank">https://dirtypipe.cm4all.com/</a></li><li><a href="http://packetstormsecurity.com/files/166229/Dirty-Pipe-Linux-Privilege-Escalation.html" target="_blank">http://packetstormsecurity.com/files/166229/Dirty-Pipe-Linux-Privilege-Escalation.html</a></li><li><a href="http://packetstormsecurity.com/files/166230/Dirty-Pipe-SUID-Binary-Hijack-Privilege-Escalation.html" target="_blank">http://packetstormsecurity.com/files/166230/Dirty-Pipe-SUID-Binary-Hijack-Privilege-Escalation.html</a></li><li><a href="http://packetstormsecurity.com/files/166258/Dirty-Pipe-Local-Privilege-Escalation.html" target="_blank">http://packetstormsecurity.com/files/166258/Dirty-Pipe-Local-Privilege-Escalation.html</a></li><li><a href="http://packetstormsecurity.com/files/176534/Linux-4.20-KTLS-Read-Only-Write.html" target="_blank">http://packetstormsecurity.com/files/176534/Linux-4.20-KTLS-Read-Only-Write.html</a></li><li><a href="https://dirtypipe.cm4all.com/" target="_blank">https://dirtypipe.cm4all.com/</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2022-26143" target="_blank">CVE-2022-26143</a></h3>
+            <p>The TP-240 (aka tp240dvr) component in Mitel MiCollab before 9.4 SP1 FP1 and MiVoice Business Express through 8.1 allows remote attackers to obtain sensitive information and cause a denial of service (performance degradation and excessive outbound traffic). This was exploited in the wild in February and March 2022 for the TP240PhoneHome DDoS attack.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://arstechnica.com/information-technology/2022/03/ddosers-use-new-method-capable-of-amplifying-traffic-by-a-factor-of-4-billion/" target="_blank">https://arstechnica.com/information-technology/2022/03/ddosers-use-new-method-capable-of-amplifying-traffic-by-a-factor-of-4-billion/</a></li><li><a href="https://arstechnica.com/information-technology/2022/03/ddosers-use-new-method-capable-of-amplifying-traffic-by-a-factor-of-4-billion/" target="_blank">https://arstechnica.com/information-technology/2022/03/ddosers-use-new-method-capable-of-amplifying-traffic-by-a-factor-of-4-billion/</a></li></ul></div>
+</body></html>

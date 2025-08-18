@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2024-01-31</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2024-01-31</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-1086" target="_blank">CVE-2024-1086</a></h3>
+            <p>A use-after-free vulnerability in the Linux kernel's netfilter: nf_tables component can be exploited to achieve local privilege escalation.
+
+The nft_verdict_init() function allows positive values as drop error within the hook verdict, and hence the nf_hook_slow() function can cause a double free vulnerability when NF_DROP is issued with a drop error which resembles NF_ACCEPT.
+
+We recommend upgrading past commit f342de4e2f33e0e39165d8639387aa6c19dff660.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://www.openwall.com/lists/oss-security/2024/04/14/1" target="_blank">http://www.openwall.com/lists/oss-security/2024/04/14/1</a></li><li><a href="http://www.openwall.com/lists/oss-security/2024/04/17/5" target="_blank">http://www.openwall.com/lists/oss-security/2024/04/17/5</a></li><li><a href="https://github.com/Notselwyn/CVE-2024-1086" target="_blank">https://github.com/Notselwyn/CVE-2024-1086</a></li><li><a href="https://pwning.tech/nftables/" target="_blank">https://pwning.tech/nftables/</a></li><li><a href="http://www.openwall.com/lists/oss-security/2024/04/14/1" target="_blank">http://www.openwall.com/lists/oss-security/2024/04/14/1</a></li><li><a href="http://www.openwall.com/lists/oss-security/2024/04/17/5" target="_blank">http://www.openwall.com/lists/oss-security/2024/04/17/5</a></li><li><a href="https://github.com/Notselwyn/CVE-2024-1086" target="_blank">https://github.com/Notselwyn/CVE-2024-1086</a></li><li><a href="https://pwning.tech/nftables/" target="_blank">https://pwning.tech/nftables/</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-21893" target="_blank">CVE-2024-21893</a></h3>
+            <p>A server-side request forgery vulnerability in the SAML component of Ivanti Connect Secure (9.x, 22.x) and Ivanti Policy Secure (9.x, 22.x) and Ivanti Neurons for ZTA allows an attacker to access certain restricted resources without authentication.</p>
+        </div>
+</body></html>

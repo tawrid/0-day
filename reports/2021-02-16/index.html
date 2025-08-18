@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2021-02-16</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2021-02-16</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-21315" target="_blank">CVE-2021-21315</a></h3>
+            <p>The System Information Library for Node.JS (npm package "systeminformation") is an open source collection of functions to retrieve detailed hardware, system and OS information. In systeminformation before version 5.3.1 there is a command injection vulnerability. Problem was fixed in version 5.3.1. As a workaround instead of upgrading, be sure to check or sanitize service parameters that are passed to si.inetLatency(), si.inetChecksite(), si.services(), si.processLoad() ... do only allow strings, reject any arrays. String sanitation works as expected.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/sebhildebrandt/systeminformation/commit/07daa05fb06f24f96297abaa30c2ace8bfd8b525" target="_blank">https://github.com/sebhildebrandt/systeminformation/commit/07daa05fb06f24f96297abaa30c2ace8bfd8b525</a></li><li><a href="https://github.com/sebhildebrandt/systeminformation/security/advisories/GHSA-2m8v-572m-ff2v" target="_blank">https://github.com/sebhildebrandt/systeminformation/security/advisories/GHSA-2m8v-572m-ff2v</a></li><li><a href="https://github.com/sebhildebrandt/systeminformation/commit/07daa05fb06f24f96297abaa30c2ace8bfd8b525" target="_blank">https://github.com/sebhildebrandt/systeminformation/commit/07daa05fb06f24f96297abaa30c2ace8bfd8b525</a></li><li><a href="https://github.com/sebhildebrandt/systeminformation/security/advisories/GHSA-2m8v-572m-ff2v" target="_blank">https://github.com/sebhildebrandt/systeminformation/security/advisories/GHSA-2m8v-572m-ff2v</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-27101" target="_blank">CVE-2021-27101</a></h3>
+            <p>Accellion FTA 9_12_370 and earlier is affected by SQL injection via a crafted Host header in a request to document_root.html. The fixed version is FTA_9_12_380 and later.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/accellion/CVEs/blob/main/CVE-2021-27101.txt" target="_blank">https://github.com/accellion/CVEs/blob/main/CVE-2021-27101.txt</a></li><li><a href="https://github.com/accellion/CVEs/blob/main/CVE-2021-27101.txt" target="_blank">https://github.com/accellion/CVEs/blob/main/CVE-2021-27101.txt</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-27102" target="_blank">CVE-2021-27102</a></h3>
+            <p>Accellion FTA 9_12_411 and earlier is affected by OS command execution via a local web service call. The fixed version is FTA_9_12_416 and later.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/accellion/CVEs/blob/main/CVE-2021-27102.txt" target="_blank">https://github.com/accellion/CVEs/blob/main/CVE-2021-27102.txt</a></li><li><a href="https://github.com/accellion/CVEs/blob/main/CVE-2021-27102.txt" target="_blank">https://github.com/accellion/CVEs/blob/main/CVE-2021-27102.txt</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-27103" target="_blank">CVE-2021-27103</a></h3>
+            <p>Accellion FTA 9_12_411 and earlier is affected by SSRF via a crafted POST request to wmProgressstat.html. The fixed version is FTA_9_12_416 and later.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/accellion/CVEs/blob/main/CVE-2021-27103.txt" target="_blank">https://github.com/accellion/CVEs/blob/main/CVE-2021-27103.txt</a></li><li><a href="https://github.com/accellion/CVEs/blob/main/CVE-2021-27103.txt" target="_blank">https://github.com/accellion/CVEs/blob/main/CVE-2021-27103.txt</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-27104" target="_blank">CVE-2021-27104</a></h3>
+            <p>Accellion FTA 9_12_370 and earlier is affected by OS command execution via a crafted POST request to various admin endpoints. The fixed version is FTA_9_12_380 and later.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/accellion/CVEs/blob/main/CVE-2021-27104.txt" target="_blank">https://github.com/accellion/CVEs/blob/main/CVE-2021-27104.txt</a></li><li><a href="https://github.com/accellion/CVEs/blob/main/CVE-2021-27104.txt" target="_blank">https://github.com/accellion/CVEs/blob/main/CVE-2021-27104.txt</a></li></ul></div>
+</body></html>

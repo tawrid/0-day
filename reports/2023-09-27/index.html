@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2023-09-27</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2023-09-27</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-36851" target="_blank">CVE-2023-36851</a></h3>
+            <p>A Missing Authentication for Critical Function vulnerability in Juniper Networks Junos OS on SRX Series allows an unauthenticated, network-based attacker to cause limited impact to the file system integrity.
+
+
+
+With a specific request to 
+
+webauth_operation.php
+
+that doesn't require authentication, an attacker is able to upload and download arbitrary files via J-Web, leading to a loss of 
+
+integrity or confidentiality, which may allow chaining to other vulnerabilities.
+
+
+This issue affects Juniper Networks Junos OS on SRX Series:
+
+
+
+  *  
+
+21.2 versions prior to 21.2R3-S8;
+  *  21.4 
+
+versions prior to 
+
+21.4R3-S6;
+  *  22.1 
+
+versions prior to 
+
+22.1R3-S5;
+  *  22.2 
+
+versions prior to 
+
+22.2R3-S3;
+  *  22.3 
+
+versions prior to 
+
+22.3R3-S2;
+  *  22.4 versions prior to 22,4R2-S2, 22.4R3;
+  *  23.2 versions prior to 
+
+23.2R1-S2, 23.2R2.
+
+
+</p>
+        </div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-40044" target="_blank">CVE-2023-40044</a></h3>
+            <p>In WS_FTP Server versions prior to 8.7.4 and 8.8.2, a pre-authenticated attacker could leverage a .NET deserialization vulnerability in the Ad Hoc Transfer module to execute remote commands on the underlying WS_FTP Server operating system.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://packetstormsecurity.com/files/174917/Progress-Software-WS_FTP-Unauthenticated-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/174917/Progress-Software-WS_FTP-Unauthenticated-Remote-Code-Execution.html</a></li><li><a href="https://www.assetnote.io/resources/research/rce-in-progress-ws-ftp-ad-hoc-via-iis-http-modules-cve-2023-40044" target="_blank">https://www.assetnote.io/resources/research/rce-in-progress-ws-ftp-ad-hoc-via-iis-http-modules-cve-2023-40044</a></li><li><a href="http://packetstormsecurity.com/files/174917/Progress-Software-WS_FTP-Unauthenticated-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/174917/Progress-Software-WS_FTP-Unauthenticated-Remote-Code-Execution.html</a></li><li><a href="https://www.assetnote.io/resources/research/rce-in-progress-ws-ftp-ad-hoc-via-iis-http-modules-cve-2023-40044" target="_blank">https://www.assetnote.io/resources/research/rce-in-progress-ws-ftp-ad-hoc-via-iis-http-modules-cve-2023-40044</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-20109" target="_blank">CVE-2023-20109</a></h3>
+            <p>A vulnerability in the Cisco Group Encrypted Transport VPN (GET VPN) feature of Cisco IOS Software and Cisco IOS XE Software could allow an authenticated, remote attacker who has administrative control of either a group member or a key server to execute arbitrary code on an affected device or cause the device to crash.
+ This vulnerability is due to insufficient validation of attributes in the Group Domain of Interpretation (GDOI) and G-IKEv2 protocols of the GET VPN feature. An attacker could exploit this vulnerability by either compromising an installed key server or modifying the configuration of a group member to point to a key server that is controlled by the attacker. A successful exploit could allow the attacker to execute arbitrary code and gain full control of the affected system or cause the affected system to reload, resulting in a denial of service (DoS) condition. For more information, see the Details ["#details"] section of this advisory.</p>
+        </div>
+</body></html>

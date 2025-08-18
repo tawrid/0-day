@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2024-12-27</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2024-12-27</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-3393" target="_blank">CVE-2024-3393</a></h3>
+            <p>A Denial of Service vulnerability in the DNS Security feature of Palo Alto Networks PAN-OS software allows an unauthenticated attacker to send a malicious packet through the data plane of the firewall that reboots the firewall. Repeated attempts to trigger this condition will cause the firewall to enter maintenance mode.</p>
+        </div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-53197" target="_blank">CVE-2024-53197</a></h3>
+            <p>In the Linux kernel, the following vulnerability has been resolved:
+
+ALSA: usb-audio: Fix potential out-of-bound accesses for Extigy and Mbox devices
+
+A bogus device can provide a bNumConfigurations value that exceeds the
+initial value used in usb_get_configuration for allocating dev->config.
+
+This can lead to out-of-bounds accesses later, e.g. in
+usb_destroy_configuration.</p>
+        </div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-12987" target="_blank">CVE-2024-12987</a></h3>
+            <p>A vulnerability, which was classified as critical, was found in DrayTek Vigor2960 and Vigor300B 1.5.1.4. Affected is an unknown function of the file /cgi-bin/mainfunction.cgi/apmcfgupload of the component Web Management Interface. The manipulation of the argument session leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 1.5.1.5 is able to address this issue. It is recommended to upgrade the affected component.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://netsecfish.notion.site/Command-Injection-in-apmcfgupload-endpoint-for-DrayTek-Gateway-Devices-1676b683e67c8040b7f1f0ffe29ce18f?pvs=4" target="_blank">https://netsecfish.notion.site/Command-Injection-in-apmcfgupload-endpoint-for-DrayTek-Gateway-Devices-1676b683e67c8040b7f1f0ffe29ce18f?pvs=4</a></li></ul></div>
+</body></html>

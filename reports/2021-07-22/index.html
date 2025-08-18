@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2021-07-22</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2021-07-22</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-36934" target="_blank">CVE-2021-36934</a></h3>
+            <p><p>An elevation of privilege vulnerability exists because of overly permissive Access Control Lists (ACLs) on multiple system files, including the Security Accounts Manager (SAM) database. An attacker who successfully exploited this vulnerability could run arbitrary code with SYSTEM privileges. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.</p>
+<p>An attacker must have the ability to execute code on a victim system to exploit this vulnerability.</p>
+<p>After installing this security update, you <em>must</em> manually delete all shadow copies of system files, including the SAM database, to fully mitigate this vulnerabilty. <strong>Simply installing this security update will not fully mitigate this vulnerability.</strong> See <a href="https://support.microsoft.com/topic/1ceaa637-aaa3-4b58-a48b-baf72a2fa9e7">KB5005357- Delete Volume Shadow Copies</a>.</p>
+</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://packetstormsecurity.com/files/164006/HiveNightmare-AKA-SeriousSAM.html" target="_blank">http://packetstormsecurity.com/files/164006/HiveNightmare-AKA-SeriousSAM.html</a></li><li><a href="http://packetstormsecurity.com/files/164006/HiveNightmare-AKA-SeriousSAM.html" target="_blank">http://packetstormsecurity.com/files/164006/HiveNightmare-AKA-SeriousSAM.html</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-35464" target="_blank">CVE-2021-35464</a></h3>
+            <p>ForgeRock AM server before 7.0 has a Java deserialization vulnerability in the jato.pageSession parameter on multiple pages. The exploitation does not require authentication, and remote code execution can be triggered by sending a single crafted /ccversion/* request to the server. The vulnerability exists due to the usage of Sun ONE Application Framework (JATO) found in versions of Java 8 or earlier</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://packetstormsecurity.com/files/163486/ForgeRock-OpenAM-Jato-Java-Deserialization.html" target="_blank">http://packetstormsecurity.com/files/163486/ForgeRock-OpenAM-Jato-Java-Deserialization.html</a></li><li><a href="http://packetstormsecurity.com/files/163525/ForgeRock-Access-Manager-OpenAM-14.6.3-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/163525/ForgeRock-Access-Manager-OpenAM-14.6.3-Remote-Code-Execution.html</a></li><li><a href="https://backstage.forgerock.com/knowledge/kb/article/a47894244" target="_blank">https://backstage.forgerock.com/knowledge/kb/article/a47894244</a></li><li><a href="http://packetstormsecurity.com/files/163486/ForgeRock-OpenAM-Jato-Java-Deserialization.html" target="_blank">http://packetstormsecurity.com/files/163486/ForgeRock-OpenAM-Jato-Java-Deserialization.html</a></li><li><a href="http://packetstormsecurity.com/files/163525/ForgeRock-Access-Manager-OpenAM-14.6.3-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/163525/ForgeRock-Access-Manager-OpenAM-14.6.3-Remote-Code-Execution.html</a></li><li><a href="https://backstage.forgerock.com/knowledge/kb/article/a47894244" target="_blank">https://backstage.forgerock.com/knowledge/kb/article/a47894244</a></li></ul></div>
+</body></html>

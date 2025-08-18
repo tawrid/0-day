@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2021-12-15</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2021-12-15</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-43890" target="_blank">CVE-2021-43890</a></h3>
+            <p>We have investigated reports of a spoofing vulnerability in AppX installer that affects Microsoft Windows. Microsoft is aware of attacks that attempt to exploit this vulnerability by using specially crafted packages that include the malware family known as Emotet/Trickbot/Bazaloader.
+An attacker could craft a malicious attachment to be used in phishing campaigns. The attacker would then have to convince the user to open the specially crafted attachment. Users whose accounts are configured to have fewer user rights on the system could be less impacted than users who operate with administrative user rights.
+Please see the Security Updates table for the link to the updated app. Alternatively you can download and install the Installer using the links provided in the FAQ section.
+Please see the Mitigations and Workaround sections for important information about steps you can take to protect your system from this vulnerability.
+December 27 2023 Update:
+In recent months, Microsoft Threat Intelligence has seen an increase in activity from threat actors leveraging social engineering and phishing techniques to target Windows OS users and utilizing the ms-appinstaller URI scheme.
+To address this increase in activity, we have updated the App Installer to disable the ms-appinstaller protocol by default and recommend other potential mitigations.
+</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/ChrisTitusTech/winutil/pull/26" target="_blank">https://github.com/ChrisTitusTech/winutil/pull/26</a></li><li><a href="https://www.microsoft.com/en-us/security/blog/2023/12/28/financially-motivated-threat-actors-misusing-app-installer/" target="_blank">https://www.microsoft.com/en-us/security/blog/2023/12/28/financially-motivated-threat-actors-misusing-app-installer/</a></li><li><a href="https://github.com/ChrisTitusTech/winutil/pull/26" target="_blank">https://github.com/ChrisTitusTech/winutil/pull/26</a></li><li><a href="https://www.microsoft.com/en-us/security/blog/2023/12/28/financially-motivated-threat-actors-misusing-app-installer/" target="_blank">https://www.microsoft.com/en-us/security/blog/2023/12/28/financially-motivated-threat-actors-misusing-app-installer/</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-0920" target="_blank">CVE-2021-0920</a></h3>
+            <p>In unix_scm_to_skb of af_unix.c, there is a possible use after free bug due to a race condition. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-196926917References: Upstream kernel</p>
+        </div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-1048" target="_blank">CVE-2021-1048</a></h3>
+            <p>In ep_loop_check_proc of eventpoll.c, there is a possible way to corrupt memory due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-204573007References: Upstream kernel</p>
+        </div>
+</body></html>
