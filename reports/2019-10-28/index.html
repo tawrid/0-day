@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2019-10-28</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2019-10-28</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2019-11043" target="_blank">CVE-2019-11043</a></h3>
+            <p>In PHP versions 7.1.x below 7.1.33, 7.2.x below 7.2.24 and 7.3.x below 7.3.11 in certain configurations of FPM setup it is possible to cause FPM module to write past allocated buffers into the space reserved for FCGI protocol data, thus opening the possibility of remote code execution.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://packetstormsecurity.com/files/156642/PHP-FPM-7.x-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/156642/PHP-FPM-7.x-Remote-Code-Execution.html</a></li><li><a href="https://bugs.php.net/bug.php?id=78599" target="_blank">https://bugs.php.net/bug.php?id=78599</a></li><li><a href="https://github.com/neex/phuip-fpizdam" target="_blank">https://github.com/neex/phuip-fpizdam</a></li><li><a href="http://packetstormsecurity.com/files/156642/PHP-FPM-7.x-Remote-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/156642/PHP-FPM-7.x-Remote-Code-Execution.html</a></li><li><a href="https://bugs.php.net/bug.php?id=78599" target="_blank">https://bugs.php.net/bug.php?id=78599</a></li><li><a href="https://github.com/neex/phuip-fpizdam" target="_blank">https://github.com/neex/phuip-fpizdam</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2019-18187" target="_blank">CVE-2019-18187</a></h3>
+            <p>Trend Micro OfficeScan versions 11.0 and XG (12.0) could be exploited by an attacker utilizing a directory traversal vulnerability to extract files from an arbitrary zip file to a specific folder on the OfficeScan server, which could potentially lead to remote code execution (RCE). The remote process execution is bound to a web service account, which depending on the web platform used may have restricted permissions. An attempted attack requires user authentication.</p>
+        </div>
+</body></html>

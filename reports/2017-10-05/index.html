@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2017-10-05</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2017-10-05</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2017-1000253" target="_blank">CVE-2017-1000253</a></h3>
+            <p>Linux distributions that have not patched their long-term kernels with https://git.kernel.org/linus/a87938b2e246b81b4fb713edb371a9fa3c5c3c86 (committed on April 14, 2015). This kernel vulnerability was fixed in April 2015 by commit a87938b2e246b81b4fb713edb371a9fa3c5c3c86 (backported to Linux 3.10.77 in May 2015), but it was not recognized as a security threat. With CONFIG_ARCH_BINFMT_ELF_RANDOMIZE_PIE enabled, and a normal top-down address allocation strategy, load_elf_binary() will attempt to map a PIE binary into an address range immediately below mm->mmap_base. Unfortunately, load_elf_ binary() does not take account of the need to allocate sufficient space for the entire binary which means that, while the first PT_LOAD segment is mapped below mm->mmap_base, the subsequent PT_LOAD segment(s) end up being mapped above mm->mmap_base into the are that is supposed to be the "gap" between the stack and the binary.</p>
+        </div>
+</body></html>

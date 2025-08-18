@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2017-12-12</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2017-12-12</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2017-17562" target="_blank">CVE-2017-17562</a></h3>
+            <p>Embedthis GoAhead before 3.6.5 allows remote code execution if CGI is enabled and a CGI program is dynamically linked. This is a result of initializing the environment of forked CGI scripts using untrusted HTTP request parameters in the cgiHandler function in cgi.c. When combined with the glibc dynamic linker, this behaviour can be abused for remote code execution using special parameter names such as LD_PRELOAD. An attacker can POST their shared object payload in the body of the request, and reference it using /proc/self/fd/0.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/elttam/advisories/tree/master/CVE-2017-17562" target="_blank">https://github.com/elttam/advisories/tree/master/CVE-2017-17562</a></li><li><a href="https://github.com/embedthis/goahead/commit/6f786c123196eb622625a920d54048629a7caa74" target="_blank">https://github.com/embedthis/goahead/commit/6f786c123196eb622625a920d54048629a7caa74</a></li><li><a href="https://github.com/embedthis/goahead/issues/249" target="_blank">https://github.com/embedthis/goahead/issues/249</a></li><li><a href="https://www.elttam.com.au/blog/goahead/" target="_blank">https://www.elttam.com.au/blog/goahead/</a></li><li><a href="https://www.exploit-db.com/exploits/43360/" target="_blank">https://www.exploit-db.com/exploits/43360/</a></li><li><a href="https://www.exploit-db.com/exploits/43877/" target="_blank">https://www.exploit-db.com/exploits/43877/</a></li><li><a href="https://github.com/elttam/advisories/tree/master/CVE-2017-17562" target="_blank">https://github.com/elttam/advisories/tree/master/CVE-2017-17562</a></li><li><a href="https://github.com/embedthis/goahead/commit/6f786c123196eb622625a920d54048629a7caa74" target="_blank">https://github.com/embedthis/goahead/commit/6f786c123196eb622625a920d54048629a7caa74</a></li><li><a href="https://github.com/embedthis/goahead/issues/249" target="_blank">https://github.com/embedthis/goahead/issues/249</a></li><li><a href="https://www.elttam.com.au/blog/goahead/" target="_blank">https://www.elttam.com.au/blog/goahead/</a></li><li><a href="https://www.exploit-db.com/exploits/43360/" target="_blank">https://www.exploit-db.com/exploits/43360/</a></li><li><a href="https://www.exploit-db.com/exploits/43877/" target="_blank">https://www.exploit-db.com/exploits/43877/</a></li></ul></div>
+</body></html>

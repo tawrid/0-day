@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2017-09-07</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2017-09-07</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2017-6627" target="_blank">CVE-2017-6627</a></h3>
+            <p>A vulnerability in the UDP processing code of Cisco IOS 15.1, 15.2, and 15.4 and IOS XE 3.14 through 3.18 could allow an unauthenticated, remote attacker to cause the input queue of an affected system to hold UDP packets, causing an interface queue wedge and a denial of service (DoS) condition. The vulnerability is due to Cisco IOS Software application changes that create UDP sockets and leave the sockets idle without closing them. An attacker could exploit this vulnerability by sending UDP packets with a destination port of 0 to an affected device. A successful exploit could allow the attacker to cause UDP packets to be held in the input interfaces queue, resulting in a DoS condition. The input interface queue will stop holding UDP packets when it receives 250 packets. Cisco Bug IDs: CSCup10024, CSCva55744, CSCva95506.</p>
+        </div>
+</body></html>

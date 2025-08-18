@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2018-03-27</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2018-03-27</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2017-12319" target="_blank">CVE-2017-12319</a></h3>
+            <p>A vulnerability in the Border Gateway Protocol (BGP) over an Ethernet Virtual Private Network (EVPN) for Cisco IOS XE Software could allow an unauthenticated, remote attacker to cause the device to reload, resulting in a denial of service (DoS) condition, or potentially corrupt the BGP routing table, which could result in network instability. The vulnerability exists due to changes in the implementation of the BGP MPLS-Based Ethernet VPN RFC (RFC 7432) draft between IOS XE software releases. When the BGP Inclusive Multicast Ethernet Tag Route or BGP EVPN MAC/IP Advertisement Route update packet is received, it could be possible that the IP address length field is miscalculated. An attacker could exploit this vulnerability by sending a crafted BGP packet to an affected device after the BGP session was established. An exploit could allow the attacker to cause the affected device to reload or corrupt the BGP routing table; either outcome would result in a DoS. The vulnerability may be triggered when the router receives a crafted BGP message from a peer on an existing BGP session. This vulnerability affects all releases of Cisco IOS XE Software prior to software release 16.3 that support BGP EVPN configurations. If the device is not configured for EVPN, it is not vulnerable. Cisco Bug IDs: CSCui67191, CSCvg52875.</p>
+        </div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-6882" target="_blank">CVE-2018-6882</a></h3>
+            <p>Cross-site scripting (XSS) vulnerability in the ZmMailMsgView.getAttachmentLinkHtml function in Zimbra Collaboration Suite (ZCS) before 8.7 Patch 1 and 8.8.x before 8.8.7 might allow remote attackers to inject arbitrary web script or HTML via a Content-Location header in an email attachment.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://www.securify.nl/advisory/SFY20180101/cross-site-scripting-vulnerability-in-zimbra-collaboration-suite-due-to-the-way-it-handles-attachment-links.html" target="_blank">https://www.securify.nl/advisory/SFY20180101/cross-site-scripting-vulnerability-in-zimbra-collaboration-suite-due-to-the-way-it-handles-attachment-links.html</a></li><li><a href="https://www.securify.nl/advisory/SFY20180101/cross-site-scripting-vulnerability-in-zimbra-collaboration-suite-due-to-the-way-it-handles-attachment-links.html" target="_blank">https://www.securify.nl/advisory/SFY20180101/cross-site-scripting-vulnerability-in-zimbra-collaboration-suite-due-to-the-way-it-handles-attachment-links.html</a></li></ul></div>
+</body></html>
