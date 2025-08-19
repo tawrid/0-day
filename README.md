@@ -1,6 +1,6 @@
 # Daily Vulnerability Report 🛡️
 
-This repository hosts a daily, automated vulnerability report. A GitHub Actions workflow runs a Python script every day at 6 AM NZST to fetch the latest 0-day vulnerabilities from the National Vulnerability Database (NVD) and publishes them as a clean, navigable GitHub Page.
+This repository hosts a daily, automated vulnerability report. A GitHub Actions workflow runs a Python script every day at 18:00 UTC to fetch the latest 0-day vulnerabilities from the National Vulnerability Database (NVD) and publishes them as a clean, navigable GitHub Page.
 
 The goal is to provide a simple, self-updating site that keeps a historical record of recent vulnerabilities, allowing for easy browsing by date.
 
@@ -18,7 +18,7 @@ The goal is to provide a simple, self-updating site that keeps a historical reco
 
 ## How It Works
 
-1. **Scheduled Trigger:** A GitHub Actions workflow is scheduled to run daily at `6 AM NZST` (which is `18:00 UTC`).
+1. **Scheduled Trigger:** A GitHub Actions workflow is scheduled to run daily at `18:00 UTC`.
 
 2. **API Call:** The `vulnerability_reporter.py` script makes an API request to the NVD to find all Common Vulnerabilities and Exposures (CVEs) published in the last 24 hours.
 
@@ -49,20 +49,17 @@ The goal is to provide a simple, self-updating site that keeps a historical reco
 The workflow will run automatically at the scheduled time. You can also trigger a manual run at any time from the **Actions** tab of your repository.
 
 ## Project Structure
-
+```
 /
 ├── .github/
 │   └── workflows/
 │       └── daily-job.yml      # The GitHub Actions workflow file
-├── _data/                     # Directory for generated reports
-│   └── reports/
-│       └── <year>/
-│           └── <month>/
-│               └── <day>/
-│                   └── index.html # The daily report
+├── reports/                   # Directory for generated reports
+│   └── <year>-<month>-<day>/
+│          └── index.html      # The daily report
 ├── vulnerability_reporter.py  # The Python script
 └── README.md                  # This file
-
+```
 ## Contributing
 
 We welcome contributions! Feel free to open an issue or submit a pull request if you have ideas for improvements, bug fixes, or new features.
