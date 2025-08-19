@@ -56,7 +56,7 @@ jobs:
           git config --global user.email 'github-actions@github.com'
           
           # Add all changes to the staging area. The 'DATA_DIR' we defined will be included.
-          git add docs/
+          git add reports/
           
           # Check if there are any changes to commit.
           if git diff --cached --exit-code; then
