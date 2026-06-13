@@ -4,6 +4,16 @@ This repository hosts a daily, automated vulnerability report. A GitHub Actions 
 
 The goal is to provide a simple, self-updating site that keeps a historical record of recent vulnerabilities, allowing for easy browsing by date.
 
+🌐 Live Report
+
+View the latest published vulnerability reports here:
+
+https://tawrid.github.io/0-day/reports/
+
+Or browse the source HTML directly:
+
+https://github.com/tawrid/0-day/blob/main/reports/index.html
+
 ## Features
 
 * **Daily Automation:** The report is automatically generated every day using a scheduled GitHub Actions workflow.
