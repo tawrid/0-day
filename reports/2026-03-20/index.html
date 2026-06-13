@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2026-03-20</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2026-03-20</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33017" target="_blank">CVE-2026-33017</a></h3>
+            <p>Langflow is a tool for building and deploying AI-powered agents and workflows. In versions prior to 1.9.0, the POST /api/v1/build_public_tmp/{flow_id}/flow endpoint allows building public flows without requiring authentication. When the optional data parameter is supplied, the endpoint uses attacker-controlled flow data (containing arbitrary Python code in node definitions) instead of the stored flow data from the database. This code is passed to exec() with zero sandboxing, resulting in unauthenticated remote code execution. This is distinct from CVE-2025-3248, which fixed /api/v1/validate/code by adding authentication. The build_public_tmp endpoint is designed to be unauthenticated (for public flows) but incorrectly accepts attacker-supplied flow data containing arbitrary executable code. This issue has been fixed in version 1.9.0.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/advisories/GHSA-rvqx-wpfh-mfx7" target="_blank">https://github.com/advisories/GHSA-rvqx-wpfh-mfx7</a></li><li><a href="https://github.com/langflow-ai/langflow/commit/73b6612e3ef25fdae0a752d75b0fabd47328d4f0" target="_blank">https://github.com/langflow-ai/langflow/commit/73b6612e3ef25fdae0a752d75b0fabd47328d4f0</a></li><li><a href="https://github.com/langflow-ai/langflow/security/advisories/GHSA-vwmf-pq79-vjvx" target="_blank">https://github.com/langflow-ai/langflow/security/advisories/GHSA-vwmf-pq79-vjvx</a></li><li><a href="https://github.com/langflow-ai/langflow/releases/tag/1.8.2" target="_blank">https://github.com/langflow-ai/langflow/releases/tag/1.8.2</a></li><li><a href="https://medium.com/@aviral23/cve-2026-33017-how-i-found-an-unauthenticated-rce-in-langflow-by-reading-the-code-they-already-dc96cdce5896" target="_blank">https://medium.com/@aviral23/cve-2026-33017-how-i-found-an-unauthenticated-rce-in-langflow-by-reading-the-code-they-already-dc96cdce5896</a></li></ul></div>
+</body></html>

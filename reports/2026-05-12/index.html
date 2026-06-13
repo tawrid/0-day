@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2026-05-12</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2026-05-12</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45321" target="_blank">CVE-2026-45321</a></h3>
+            <p>On 2026-05-11, between approximately 19:20 and 19:26 UTC, 84 malicious versions across 42 @tanstack/* packages were published to the npm registry. The publishes were authenticated via the legitimate GitHub Actions OIDC trusted-publisher binding for TanStack/router, but the publish workflow itself was not modified. The attacker chained three known vulnerability classes — a pull_request_target "Pwn Request" misconfiguration, GitHub Actions cache poisoning across the fork↔base trust boundary, and runtime memory extraction of the OIDC token from the Actions runner process — to publish credential-stealing malware under a trusted identity. Each affected package received exactly two malicious versions, published a few minutes apart.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/TanStack/router/issues/7383" target="_blank">https://github.com/TanStack/router/issues/7383</a></li><li><a href="https://github.com/TanStack/router/security/advisories/GHSA-g7cv-rxg3-hmpx" target="_blank">https://github.com/TanStack/router/security/advisories/GHSA-g7cv-rxg3-hmpx</a></li><li><a href="https://tanstack.com/blog/npm-supply-chain-compromise-postmortem" target="_blank">https://tanstack.com/blog/npm-supply-chain-compromise-postmortem</a></li><li><a href="https://www.stepsecurity.io/blog/mini-shai-hulud-is-back-a-self-spreading-supply-chain-attack-hits-the-npm-ecosystem" target="_blank">https://www.stepsecurity.io/blog/mini-shai-hulud-is-back-a-self-spreading-supply-chain-attack-hits-the-npm-ecosystem</a></li></ul></div>
+</body></html>
