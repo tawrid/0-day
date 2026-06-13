@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2026-04-22</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2026-04-22</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31431" target="_blank">CVE-2026-31431</a></h3>
+            <p>In the Linux kernel, the following vulnerability has been resolved:
+
+crypto: algif_aead - Revert to operating out-of-place
+
+This mostly reverts commit 72548b093ee3 except for the copying of
+the associated data.
+
+There is no benefit in operating in-place in algif_aead since the
+source and destination come from different mappings.  Get rid of
+all the complexity added for in-place operation and just copy the
+AD directly.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://www.openwall.com/lists/oss-security/2026/04/29/23" target="_blank">http://www.openwall.com/lists/oss-security/2026/04/29/23</a></li><li><a href="http://www.openwall.com/lists/oss-security/2026/04/29/26" target="_blank">http://www.openwall.com/lists/oss-security/2026/04/29/26</a></li><li><a href="http://www.openwall.com/lists/oss-security/2026/04/30/18" target="_blank">http://www.openwall.com/lists/oss-security/2026/04/30/18</a></li><li><a href="http://www.openwall.com/lists/oss-security/2026/04/30/5" target="_blank">http://www.openwall.com/lists/oss-security/2026/04/30/5</a></li><li><a href="https://copy.fail" target="_blank">https://copy.fail</a></li><li><a href="https://websec.net/blog/cve-2026-31431-linux-algifaead-page-cache-write-to-root-69f38a4ccddd2db1f520f170" target="_blank">https://websec.net/blog/cve-2026-31431-linux-algifaead-page-cache-write-to-root-69f38a4ccddd2db1f520f170</a></li><li><a href="https://github.com/theori-io/copy-fail-CVE-2026-31431" target="_blank">https://github.com/theori-io/copy-fail-CVE-2026-31431</a></li><li><a href="https://xint.io/blog/copy-fail-linux-distributions#the-fix-6" target="_blank">https://xint.io/blog/copy-fail-linux-distributions#the-fix-6</a></li></ul></div>
+</body></html>

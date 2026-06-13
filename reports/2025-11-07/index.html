@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2025-11-07</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2025-11-07</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-64328" target="_blank">CVE-2025-64328</a></h3>
+            <p>FreePBX Endpoint Manager is a module for managing telephony endpoints in FreePBX systems. In versions 17.0.2.36 and above before 17.0.3, the filestore module within the Administrative interface is vulnerable to a post-authentication command injection by an authenticated known user via the testconnection -> check_ssh_connect() function. An attacker can leverage this vulnerability to obtain remote access to the system as an asterisk user. This issue is fixed in version 17.0.3.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/FreePBX/filestore/blob/f0e3983059271efd80b483ec823310ef19a59013/drivers/SSH/testconnection.php#L2" target="_blank">https://github.com/FreePBX/filestore/blob/f0e3983059271efd80b483ec823310ef19a59013/drivers/SSH/testconnection.php#L2</a></li><li><a href="https://github.com/FreePBX/security-reporting/security/advisories/GHSA-vm9p-46mv-5xvw" target="_blank">https://github.com/FreePBX/security-reporting/security/advisories/GHSA-vm9p-46mv-5xvw</a></li><li><a href="https://www.fortinet.com/blog/threat-research/unveiling-the-weaponized-web-shell-encystphp" target="_blank">https://www.fortinet.com/blog/threat-research/unveiling-the-weaponized-web-shell-encystphp</a></li></ul></div>
+</body></html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2026-05-08</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2026-05-08</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42208" target="_blank">CVE-2026-42208</a></h3>
+            <p>LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. From version 1.81.16 to before version 1.83.7, a database query used during proxy API key checks mixed the caller-supplied key value into the query text instead of passing it as a separate parameter. An unauthenticated attacker could send a specially crafted Authorization header to any LLM API route (for example POST /chat/completions) and reach this query through the proxy's error-handling path. An attacker could read data from the proxy's database and may be able to modify it, leading to unauthorised access to the proxy and the credentials it manages. This issue has been patched in version 1.83.7.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/BerriAI/litellm/releases/tag/v1.83.7-stable" target="_blank">https://github.com/BerriAI/litellm/releases/tag/v1.83.7-stable</a></li><li><a href="https://github.com/BerriAI/litellm/security/advisories/GHSA-r75f-5x8p-qvmc" target="_blank">https://github.com/BerriAI/litellm/security/advisories/GHSA-r75f-5x8p-qvmc</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42271" target="_blank">CVE-2026-42271</a></h3>
+            <p>LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. From version 1.74.2 to before version 1.83.7, two endpoints used to preview an MCP server before saving it — POST /mcp-rest/test/connection and POST /mcp-rest/test/tools/list — accepted a full server configuration in the request body, including the command, args, and env fields used by the stdio transport. When called with a stdio configuration, the endpoints attempted to connect, which spawned the supplied command as a subprocess on the proxy host with the privileges of the proxy process. The endpoints were gated only by a valid proxy API key, with no role check. Any authenticated user — including holders of low-privilege internal-user keys — could therefore run arbitrary commands on the host. This issue has been patched in version 1.83.7.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/BerriAI/litellm/releases/tag/v1.83.7-stable" target="_blank">https://github.com/BerriAI/litellm/releases/tag/v1.83.7-stable</a></li><li><a href="https://github.com/BerriAI/litellm/security/advisories/GHSA-v4p8-mg3p-g94g" target="_blank">https://github.com/BerriAI/litellm/security/advisories/GHSA-v4p8-mg3p-g94g</a></li></ul></div>
+</body></html>
