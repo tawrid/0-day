@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2010-12-06</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2010-12-06</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2010-4398" target="_blank">CVE-2010-4398</a></h3>
+            <p>Stack-based buffer overflow in the RtlQueryRegistryValues function in win32k.sys in Microsoft Windows XP SP2 and SP3, Windows Server 2003 SP2, Windows Vista SP1 and SP2, Windows Server 2008 Gold, SP2, and R2, and Windows 7 allows local users to gain privileges, and bypass the User Account Control (UAC) feature, via a crafted REG_BINARY value for a SystemDefaultEUDCFont registry key, aka "Driver Improper Interaction with Windows Kernel Vulnerability."</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://isc.sans.edu/diary.html?storyid=9988" target="_blank">http://isc.sans.edu/diary.html?storyid=9988</a></li><li><a href="http://www.exploit-db.com/bypassing-uac-with-user-privilege-under-windows-vista7-mirror/" target="_blank">http://www.exploit-db.com/bypassing-uac-with-user-privilege-under-windows-vista7-mirror/</a></li><li><a href="http://www.exploit-db.com/exploits/15609/" target="_blank">http://www.exploit-db.com/exploits/15609/</a></li><li><a href="http://isc.sans.edu/diary.html?storyid=9988" target="_blank">http://isc.sans.edu/diary.html?storyid=9988</a></li><li><a href="http://www.exploit-db.com/bypassing-uac-with-user-privilege-under-windows-vista7-mirror/" target="_blank">http://www.exploit-db.com/bypassing-uac-with-user-privilege-under-windows-vista7-mirror/</a></li><li><a href="http://www.exploit-db.com/exploits/15609/" target="_blank">http://www.exploit-db.com/exploits/15609/</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2010-3904" target="_blank">CVE-2010-3904</a></h3>
+            <p>The rds_page_copy_user function in net/rds/page.c in the Reliable Datagram Sockets (RDS) protocol implementation in the Linux kernel before 2.6.36 does not properly validate addresses obtained from user space, which allows local users to gain privileges via crafted use of the sendmsg and recvmsg system calls.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://packetstormsecurity.com/files/155751/vReliable-Datagram-Sockets-RDS-rds_page_copy_user-Privilege-Escalation.html" target="_blank">http://packetstormsecurity.com/files/155751/vReliable-Datagram-Sockets-RDS-rds_page_copy_user-Privilege-Escalation.html</a></li><li><a href="https://www.exploit-db.com/exploits/44677/" target="_blank">https://www.exploit-db.com/exploits/44677/</a></li><li><a href="http://packetstormsecurity.com/files/155751/vReliable-Datagram-Sockets-RDS-rds_page_copy_user-Privilege-Escalation.html" target="_blank">http://packetstormsecurity.com/files/155751/vReliable-Datagram-Sockets-RDS-rds_page_copy_user-Privilege-Escalation.html</a></li><li><a href="https://www.exploit-db.com/exploits/44677/" target="_blank">https://www.exploit-db.com/exploits/44677/</a></li></ul></div>
+</body></html>

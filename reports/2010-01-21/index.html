@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2010-01-21</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2010-01-21</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2010-0232" target="_blank">CVE-2010-0232</a></h3>
+            <p>The kernel in Microsoft Windows NT 3.1 through Windows 7, including Windows 2000 SP4, Windows XP SP2 and SP3, Windows Server 2003 SP2, Windows Vista Gold, SP1, and SP2, and Windows Server 2008 Gold and SP2, when access to 16-bit applications is enabled on a 32-bit x86 platform, does not properly validate certain BIOS calls, which allows local users to gain privileges by crafting a VDM_TIB data structure in the Thread Environment Block (TEB), and then calling the NtVdmControl function to start the Windows Virtual DOS Machine (aka NTVDM) subsystem, leading to improperly handled exceptions involving the #GP trap handler (nt!KiTrap0D), aka "Windows Kernel Exception Handler Vulnerability."</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://lock.cmpxchg8b.com/c0af0967d904cef2ad4db766a00bc6af/KiTrap0D.zip" target="_blank">http://lock.cmpxchg8b.com/c0af0967d904cef2ad4db766a00bc6af/KiTrap0D.zip</a></li><li><a href="http://seclists.org/fulldisclosure/2010/Jan/341" target="_blank">http://seclists.org/fulldisclosure/2010/Jan/341</a></li><li><a href="http://www.securityfocus.com/bid/37864" target="_blank">http://www.securityfocus.com/bid/37864</a></li><li><a href="http://lock.cmpxchg8b.com/c0af0967d904cef2ad4db766a00bc6af/KiTrap0D.zip" target="_blank">http://lock.cmpxchg8b.com/c0af0967d904cef2ad4db766a00bc6af/KiTrap0D.zip</a></li><li><a href="http://seclists.org/fulldisclosure/2010/Jan/341" target="_blank">http://seclists.org/fulldisclosure/2010/Jan/341</a></li><li><a href="http://www.securityfocus.com/bid/37864" target="_blank">http://www.securityfocus.com/bid/37864</a></li></ul></div>
+</body></html>

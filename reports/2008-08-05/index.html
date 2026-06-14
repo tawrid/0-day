@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2008-08-05</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2008-08-05</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2008-3431" target="_blank">CVE-2008-3431</a></h3>
+            <p>The VBoxDrvNtDeviceControl function in VBoxDrv.sys in Sun xVM VirtualBox before 1.6.4 uses the METHOD_NEITHER communication method for IOCTLs and does not properly validate a buffer associated with the Irp object, which allows local users to gain privileges by opening the \\.\VBoxDrv device and calling DeviceIoControl to send a crafted kernel address.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://www.coresecurity.com/content/virtualbox-privilege-escalation-vulnerability" target="_blank">http://www.coresecurity.com/content/virtualbox-privilege-escalation-vulnerability</a></li><li><a href="http://www.securityfocus.com/bid/30481" target="_blank">http://www.securityfocus.com/bid/30481</a></li><li><a href="https://www.exploit-db.com/exploits/6218" target="_blank">https://www.exploit-db.com/exploits/6218</a></li><li><a href="http://www.coresecurity.com/content/virtualbox-privilege-escalation-vulnerability" target="_blank">http://www.coresecurity.com/content/virtualbox-privilege-escalation-vulnerability</a></li><li><a href="http://www.securityfocus.com/bid/30481" target="_blank">http://www.securityfocus.com/bid/30481</a></li><li><a href="https://www.exploit-db.com/exploits/6218" target="_blank">https://www.exploit-db.com/exploits/6218</a></li></ul></div>
+</body></html>

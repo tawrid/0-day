@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2010-12-14</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2010-12-14</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2010-4344" target="_blank">CVE-2010-4344</a></h3>
+            <p>Heap-based buffer overflow in the string_vformat function in string.c in Exim before 4.70 allows remote attackers to execute arbitrary code via an SMTP session that includes two MAIL commands in conjunction with a large message containing crafted headers, leading to improper rejection logging.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://www.exim.org/lurker/message/20101207.215955.bb32d4f2.en.html" target="_blank">http://www.exim.org/lurker/message/20101207.215955.bb32d4f2.en.html</a></li><li><a href="http://www.openwall.com/lists/oss-security/2021/05/04/7" target="_blank">http://www.openwall.com/lists/oss-security/2021/05/04/7</a></li><li><a href="http://www.osvdb.org/69685" target="_blank">http://www.osvdb.org/69685</a></li><li><a href="https://bugzilla.redhat.com/show_bug.cgi?id=661756" target="_blank">https://bugzilla.redhat.com/show_bug.cgi?id=661756</a></li><li><a href="http://www.exim.org/lurker/message/20101207.215955.bb32d4f2.en.html" target="_blank">http://www.exim.org/lurker/message/20101207.215955.bb32d4f2.en.html</a></li><li><a href="http://www.openwall.com/lists/oss-security/2021/05/04/7" target="_blank">http://www.openwall.com/lists/oss-security/2021/05/04/7</a></li><li><a href="http://www.osvdb.org/69685" target="_blank">http://www.osvdb.org/69685</a></li><li><a href="https://bugzilla.redhat.com/show_bug.cgi?id=661756" target="_blank">https://bugzilla.redhat.com/show_bug.cgi?id=661756</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2010-4345" target="_blank">CVE-2010-4345</a></h3>
+            <p>Exim 4.72 and earlier allows local users to gain privileges by leveraging the ability of the exim user account to specify an alternate configuration file with a directive that contains arbitrary commands, as demonstrated by the spool_directory directive.</p>
+        </div>
+</body></html>
