@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2025-07-22</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2025-07-22</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-38352" target="_blank">CVE-2025-38352</a></h3>
+            <p>In the Linux kernel, the following vulnerability has been resolved:
+
+posix-cpu-timers: fix race between handle_posix_cpu_timers() and posix_cpu_timer_del()
+
+If an exiting non-autoreaping task has already passed exit_notify() and
+calls handle_posix_cpu_timers() from IRQ, it can be reaped by its parent
+or debugger right after unlock_task_sighand().
+
+If a concurrent posix_cpu_timer_del() runs at that moment, it won't be
+able to detect timer->it.cpu.firing != 0: cpu_timer_task_rcu() and/or
+lock_task_sighand() will fail.
+
+Add the tsk->exit_state check into run_posix_cpu_timers() to fix this.
+
+This fix is not needed if CONFIG_POSIX_CPU_TIMERS_TASK_WORK=y, because
+exit_task_work() is called before exit_notify(). But the check still
+makes sense, task_work_add(&tsk->posix_cputimers_work.work) will fail
+anyway in this case.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/farazsth98/chronomaly" target="_blank">https://github.com/farazsth98/chronomaly</a></li></ul></div>
+</body></html>

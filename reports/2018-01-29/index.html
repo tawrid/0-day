@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2018-01-29</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2018-01-29</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2017-1000353" target="_blank">CVE-2017-1000353</a></h3>
+            <p>Jenkins versions 2.56 and earlier as well as 2.46.1 LTS and earlier are vulnerable to an unauthenticated remote code execution. An unauthenticated remote code execution vulnerability allowed attackers to transfer a serialized Java `SignedObject` object to the Jenkins CLI, that would be deserialized using a new `ObjectInputStream`, bypassing the existing blacklist-based protection mechanism. We're fixing this issue by adding `SignedObject` to the blacklist. We're also backporting the new HTTP CLI protocol from Jenkins 2.54 to LTS 2.46.2, and deprecating the remoting-based (i.e. Java serialization) CLI protocol, disabling it by default.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="http://packetstormsecurity.com/files/159266/Jenkins-2.56-CLI-Deserialization-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/159266/Jenkins-2.56-CLI-Deserialization-Code-Execution.html</a></li><li><a href="https://www.exploit-db.com/exploits/41965/" target="_blank">https://www.exploit-db.com/exploits/41965/</a></li><li><a href="http://packetstormsecurity.com/files/159266/Jenkins-2.56-CLI-Deserialization-Code-Execution.html" target="_blank">http://packetstormsecurity.com/files/159266/Jenkins-2.56-CLI-Deserialization-Code-Execution.html</a></li><li><a href="https://www.exploit-db.com/exploits/41965/" target="_blank">https://www.exploit-db.com/exploits/41965/</a></li></ul></div>
+</body></html>
