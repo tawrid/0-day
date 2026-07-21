@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2026-07-17</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2026-07-17</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-60137" target="_blank">CVE-2026-60137</a></h3>
+            <p>WordPress 6.8.x before 6.8.6, 6.9.x before 6.9.5, and 7.0.x before 7.0.2 does not properly sanitise the author__not_in parameter of WP_Query, which could allow SQL Injection when a plugin or theme passes untrusted input to the parameter.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-fpp7-x2x2-2mjf" target="_blank">https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-fpp7-x2x2-2mjf</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63030" target="_blank">CVE-2026-63030</a></h3>
+            <p>WordPress 6.9.x before 6.9.5 and 7.0.x before 7.0.2 is affected by a REST API batch endpoint route confusion issue which, combined with the author__not_in WP_Query SQL Injection (CVE-2026-60137), could allow an attacker to perform SQL Injection and achieve Remote Code Execution.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-ff9f-jf42-662q" target="_blank">https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-ff9f-jf42-662q</a></li></ul></div>
+</body></html>
