@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2026-08-17</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2026-08-17</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-64849" target="_blank">CVE-2026-64849</a></h3>
+            <p>MLflow is an open source AI engineering platform for agents, large language models, and machine learning models. Prior to 3.15.0, the unauthenticated POST /api/2.0/mlflow/webhooks/{id}/test endpoint calls _validate_webhook_url() in mlflow/utils/validation.py only for the original URL while mlflow/webhooks/delivery.py follows redirects and re-resolves the hostname without pinning the validated address, allowing attackers to reach internal or cloud metadata services and receive response_status and response_body. This issue is fixed in version 3.15.0.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/mlflow/mlflow/commit/ba949522477cbd5915aa55d29b0cfad7d5ddf939" target="_blank">https://github.com/mlflow/mlflow/commit/ba949522477cbd5915aa55d29b0cfad7d5ddf939</a></li><li><a href="https://github.com/mlflow/mlflow/issues/24179" target="_blank">https://github.com/mlflow/mlflow/issues/24179</a></li><li><a href="https://github.com/mlflow/mlflow/pull/24258" target="_blank">https://github.com/mlflow/mlflow/pull/24258</a></li><li><a href="https://github.com/mlflow/mlflow/releases/tag/v3.15.0" target="_blank">https://github.com/mlflow/mlflow/releases/tag/v3.15.0</a></li><li><a href="https://github.com/mlflow/mlflow/security/advisories/GHSA-7gwp-5pfp-969j" target="_blank">https://github.com/mlflow/mlflow/security/advisories/GHSA-7gwp-5pfp-969j</a></li></ul></div>
+</body></html>
