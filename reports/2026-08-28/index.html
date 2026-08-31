@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2026-08-28</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2026-08-28</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81578" target="_blank">CVE-2026-81578</a></h3>
+            <p>An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/rapid7/metasploit-framework/pull/21842" target="_blank">https://github.com/rapid7/metasploit-framework/pull/21842</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-82078" target="_blank">CVE-2026-82078</a></h3>
+            <p>An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/rapid7/metasploit-framework/pull/21842" target="_blank">https://github.com/rapid7/metasploit-framework/pull/21842</a></li></ul></div>
+</body></html>
