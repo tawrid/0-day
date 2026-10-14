@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2026-10-14</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2026-10-14</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76519" target="_blank">CVE-2026-76519</a></h3>
+            <p>A vulnerability in the Advanced Malware Protection (AMP) feature of Cisco Secure Email Gateway could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.
+
+This vulnerability is due to improper handling of email attachments when the file reputation service is enabled. An attacker could exploit this vulnerability by sending an email that contains a crafted attachment through an affected device. A successful exploit could allow the attacker to write arbitrary files and execute commands with&nbsp;root privileges on the underlying operating system.</p>
+        </div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0322" target="_blank">CVE-2026-0322</a></h3>
+            <p>A remote code execution (RCE) vulnerability in the management interface of Palo Alto Networks PAN-OS® software enables an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.
+
+
+
+The security risk posed by this issue is minimized by restricting access to the management interface to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .
+
+
+
+This issue is applicable to PAN-OS software on PA-Series and VM-Series firewalls and on Panorama (virtual and M-Series).
+
+
+
+Cloud NGFW and Prisma® Access are not impacted by this vulnerability.</p>
+        </div>
+</body></html>
