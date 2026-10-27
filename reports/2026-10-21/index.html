@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2026-10-21</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2026-10-21</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-109618" target="_blank">CVE-2026-109618</a></h3>
+            <p>PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w" target="_blank">https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-109619" target="_blank">CVE-2026-109619</a></h3>
+            <p>PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp" target="_blank">https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp</a></li></ul></div>
+</body></html>
