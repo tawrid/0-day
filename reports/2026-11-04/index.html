@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2026-11-04</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2026-11-04</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-102895" target="_blank">CVE-2026-102895</a></h3>
+            <p>GPUStack is an open-source GPU cluster manager for AI model serving and GPU instance provisioning. Prior to 2.2.0, get_current_user in gpustack/api/auth.py treated a loopback request source as the built-in administrator when force_auth_localhost was false, which was the default. A remote request could appear to originate from 127.0.0.1 because client_ip_getter accepted a same-host reverse proxy peer or a client-supplied X-GPUStack-Real-IP loopback value. The bypass allowed unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclosure of worker and cloud-provider secrets, and code execution through POST /v2/inference-backends/from-yaml. Exploitation was observed in the wild against a 2.1.1 deployment. This issue is fixed in version 2.2.0.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/gpustack/gpustack/commit/53f42a6a553542974396d16a4ff6b12bcbedb48d" target="_blank">https://github.com/gpustack/gpustack/commit/53f42a6a553542974396d16a4ff6b12bcbedb48d</a></li><li><a href="https://github.com/gpustack/gpustack/pull/5346" target="_blank">https://github.com/gpustack/gpustack/pull/5346</a></li><li><a href="https://github.com/gpustack/gpustack/releases/tag/v2.2.0" target="_blank">https://github.com/gpustack/gpustack/releases/tag/v2.2.0</a></li><li><a href="https://github.com/gpustack/gpustack/security/advisories/GHSA-gj9m-f8ph-pmhr" target="_blank">https://github.com/gpustack/gpustack/security/advisories/GHSA-gj9m-f8ph-pmhr</a></li></ul></div>
+</body></html>

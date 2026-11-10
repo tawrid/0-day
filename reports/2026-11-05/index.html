@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2026-11-05</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2026-11-05</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-123158" target="_blank">CVE-2026-123158</a></h3>
+            <p>sshd in OpenSSH before 10.6p2 on Linux, when musl libc is used without PAM, lacks a workaround for a password authentication bypass (related to misinterpretation of whether a string is intended to be a password hash). For some configurations of accounts, any password between 256 and 1024 characters succeeds. An example of a platform using musl libc without PAM is Alpine Linux.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/leonjza/sshhole-lab" target="_blank">https://github.com/leonjza/sshhole-lab</a></li><li><a href="https://github.com/openssh/openssh-portable/commit/4353fdc43ef646c43a8dda7025cc1a898caf1482" target="_blank">https://github.com/openssh/openssh-portable/commit/4353fdc43ef646c43a8dda7025cc1a898caf1482</a></li><li><a href="https://github.com/predkambrij/sshhole-repro" target="_blank">https://github.com/predkambrij/sshhole-repro</a></li><li><a href="https://github.com/coollabsio/coolify/discussions/12484" target="_blank">https://github.com/coollabsio/coolify/discussions/12484</a></li><li><a href="https://github.com/google/goonami-scanner/pull/277" target="_blank">https://github.com/google/goonami-scanner/pull/277</a></li><li><a href="https://github.com/panubo/docker-sshd/issues/93" target="_blank">https://github.com/panubo/docker-sshd/issues/93</a></li></ul></div>
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-116779" target="_blank">CVE-2026-116779</a></h3>
+            <p>FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software implementation that runs on any commodity hardware. Prior to 1.11.3, sofia_presence_handle_sip_i_message() split the To user of an inbound SIP MESSAGE on a plus sign and treated the left side as a chat protocol selector. Selecting the api chat proto reached switch_api_execute(), allowing a peer whose MESSAGE was accepted to run FreeSWITCH API commands, including operating-system command sinks, with the daemon's privileges. Inbound chat is enabled on the stock internal and external profiles, and any authenticated profile account is sufficient; stock directory users without password material can also remove that barrier in affected configurations. The flaw permits configuration and credential disclosure, arbitrary call control, and command execution, and exploitation has been observed in the wild. This issue is fixed in version 1.11.3.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/signalwire/freeswitch/commit/7015f6a73ab3d67fed5fbfc277ecfb88a74c2a86" target="_blank">https://github.com/signalwire/freeswitch/commit/7015f6a73ab3d67fed5fbfc277ecfb88a74c2a86</a></li><li><a href="https://github.com/signalwire/freeswitch/pull/3135" target="_blank">https://github.com/signalwire/freeswitch/pull/3135</a></li><li><a href="https://github.com/signalwire/freeswitch/releases/tag/v1.11.3" target="_blank">https://github.com/signalwire/freeswitch/releases/tag/v1.11.3</a></li><li><a href="https://github.com/signalwire/freeswitch/security/advisories/GHSA-mg63-h38w-8p9p" target="_blank">https://github.com/signalwire/freeswitch/security/advisories/GHSA-mg63-h38w-8p9p</a></li></ul></div>
+</body></html>
