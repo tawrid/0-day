@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>0-Day Vulnerability Report 2026-11-17</title>
+<style>
+body { font-family: sans-serif; margin: 0; padding: 20px; }
+.cve-item { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+a { text-decoration: none; color: #0645ad; }
+</style>
+</head><body>
+<h1>0-Day Vulnerabilities for 2026-11-17</h1>
+
+        <div class="cve-item">
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-129448" target="_blank">CVE-2026-129448</a></h3>
+            <p>Deserialization of Untrusted Data in Apache Roller versions 4.0.0 through 6.1.4 allows an unauthenticated remote attacker to execute arbitrary code. The XML-RPC endpoint accepts vendor extension types and deserializes them before authenticating the requester.
+
+This is the same vulnerability as CVE-2026-82384, which listed only Apache Roller 6.1.5 as affected. This issue is being actively exploited.
+
+Users are recommended to upgrade to Apache Roller 6.1.6 or later, which disables the extension types and rejects XML-RPC requests when the XML-RPC feature is disabled.
+
+Users who cannot upgrade right away should set "enabledForExtensions" to "false" in WEB-INF/web.xml, or remove the "/roller-services/xmlrpc" servlet mapping, and restart Roller. Disabling XML-RPC in the administration UI is not enough, because older versions deserialize the request before checking that setting.</p>
+        <p><strong>Exploits:</strong></p><ul><li><a href="https://github.com/apache/roller/pull/171" target="_blank">https://github.com/apache/roller/pull/171</a></li></ul></div>
+</body></html>
